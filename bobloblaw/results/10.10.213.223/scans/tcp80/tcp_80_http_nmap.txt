@@ -1,0 +1,139 @@
+# Nmap 7.93 scan initiated Wed Dec 28 17:11:41 2022 as: nmap -vv --reason -Pn -T4 -sV -p 80 "--script=banner,(http* or ssl*) and not (brute or broadcast or dos or external or http-slowloris* or fuzzer)" -oN /home/jason/TryHackMe/bobloblaw/results/10.10.213.223/scans/tcp80/tcp_80_http_nmap.txt -oX /home/jason/TryHackMe/bobloblaw/results/10.10.213.223/scans/tcp80/xml/tcp_80_http_nmap.xml 10.10.213.223
+Nmap scan report for 10.10.213.223
+Host is up, received user-set (0.20s latency).
+Scanned at 2022-12-28 17:11:41 MST for 34s
+
+Bug in http-security-headers: no string output.
+PORT   STATE SERVICE REASON  VERSION
+80/tcp open  http    syn-ack Apache httpd 2.4.7 ((Ubuntu))
+| http-comments-displayer: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.10.213.223
+|     
+|     Path: http://10.10.213.223:80/
+|     Line number: 4
+|     Comment: 
+|         <!--
+|             Modified from the Debian original for Ubuntu
+|             Last updated: 2014-03-19
+|             See: https://launchpad.net/bugs/1288690
+|           -->
+|     
+|     Path: http://10.10.213.223:80/
+|     Line number: 206
+|     Comment: 
+|         <!--      <div class="table_of_contents floating_element">
+|                 <div class="section_header section_header_grey">
+|                   TABLE OF CONTENTS
+|                 </div>
+|                 <div class="table_of_contents_item floating_element">
+|                   <a href="#about">About</a>
+|                 </div>
+|                 <div class="table_of_contents_item floating_element">
+|                   <a href="#changes">Changes</a>
+|                 </div>
+|                 <div class="table_of_contents_item floating_element">
+|                   <a href="#scope">Scope</a>
+|                 </div>
+|                 <div class="table_of_contents_item floating_element">
+|                   <a href="#files">Config files</a>
+|                 </div>
+|               </div>
+|         -->
+|     
+|     Path: http://10.10.213.223:80/
+|     Line number: 9
+|     Comment: 
+|         <!--
+|         K1stLS0+Kys8XT4rLisrK1stPisrKys8XT4uLS0tLisrKysrKysrKy4tWy0+KysrKys8XT4tLisrKytbLT4rKzxdPisuLVstPisrKys8XT4uLS1bLT4rKysrPF0+LS4tWy0+KysrPF0+LS4tLVstLS0+KzxdPi0tLitbLS0tLT4rPF0+KysrLlstPisrKzxdPisuLVstPisrKzxdPi4tWy0tLT4rKzxdPisuLS0uLS0tLS0uWy0+KysrPF0+Li0tLS0tLS0tLS0tLS4rWy0tLS0tPis8XT4uLS1bLS0tPis8XT4uLVstLS0tPis8XT4rKy4rK1stPisrKzxdPi4rKysrKysrKysrKysuLS0tLS0tLS0tLi0tLS0uKysrKysrKysrLi0tLS0tLS0tLS0uLS1bLS0tPis8XT4tLS0uK1stLS0tPis8XT4rKysuWy0+KysrPF0+Ky4rKysrKysrKysrKysrLi0tLS0tLS0tLS0uLVstLS0+KzxdPi0uKysrK1stPisrPF0+Ky4tWy0+KysrKzxdPi4tLVstPisrKys8XT4tLi0tLS0tLS0tLisrKysrKy4tLS0tLS0tLS0uLS0tLS0tLS0uLVstLS0+KzxdPi0uWy0+KysrPF0+Ky4rKysrKysrKysrKy4rKysrKysrKysrKy4tWy0+KysrPF0+LS4rWy0tLT4rPF0+KysrLi0tLS0tLS4rWy0tLS0+KzxdPisrKy4tWy0tLT4rKzxdPisuKysrLisuLS0tLS0tLS0tLS0tLisrKysrKysrLi1bKys+LS0tPF0+Ky4rKysrK1stPisrKzxdPi4tLi1bLT4rKysrKzxdPi0uKytbLS0+KysrPF0+LlstLS0+Kys8XT4tLS4rKysrK1stPisrKzxdPi4tLS0tLS0tLS0uWy0tLT4rPF0+LS0uKysrKytbLT4rKys8XT4uKysrKysrLi0tLS5bLS0+KysrKys8XT4rKysuK1stLS0tLT4rPF0+Ky4tLS0tLS0tLS0uKysrKy4tLS4rLi0tLS0tLS4rKysrKysrKysrKysrLisrKy4rLitbLS0tLT4rPF0+KysrLitbLT4rKys8XT4rLisrKysrKysrKysrLi4rKysuKy4rWysrPi0tLTxdPi4rK1stLS0+Kys8XT4uLlstPisrPF0+Ky5bLS0tPis8XT4rLisrKysrKysrKysrLi1bLT4rKys8XT4tLitbLS0tPis8XT4rKysuLS0tLS0tLitbLS0tLT4rPF0+KysrLi1bLS0tPisrPF0+LS0uKysrKysrKy4rKysrKysuLS0uKysrK1stPisrKzxdPi5bLS0tPis8XT4tLS0tLitbLS0tLT4rPF0+KysrLlstLT4rKys8XT4rLi0tLS0tLi0tLS0tLS0tLS0tLS4tLS1bLT4rKysrPF0+Li0tLS0tLS0tLS0tLS4tLS0uKysrKysrKysrLi1bLT4rKysrKzxdPi0uKytbLS0+KysrPF0+Li0tLS0tLS0uLS0tLS0tLS0tLS0tLi0tLVstPisrKys8XT4uLS0tLS0tLS0tLS0tLi0tLS4rKysrKysrKysuLVstPisrKysrPF0+LS4tLS0tLVstPisrPF0+LS4tLVstLS0+Kys8XT4tLg==
+|         -->
+|     
+|     Path: http://10.10.213.223:80/
+|     Line number: 382
+|     Comment: 
+|         <!--
+|         Dang it Bob, why do you always forget your password?
+|         I'll encode for you here so nobody else can figure out what it is: 
+|         HcfP8J54AK4
+|_        -->
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-referer-checker: Couldn't find any cross-domain scripts.
+|_http-devframework: Couldn't determine the underlying framework or CMS. Try increasing 'httpspider.maxpagecount' value to spider more pages.
+|_http-mobileversion-checker: No mobile version detected.
+| http-headers: 
+|   Date: Thu, 29 Dec 2022 00:11:54 GMT
+|   Server: Apache/2.4.7 (Ubuntu)
+|   Last-Modified: Tue, 28 Jul 2020 19:54:49 GMT
+|   ETag: "3400-5ab85cfdde1d0"
+|   Accept-Ranges: bytes
+|   Content-Length: 13312
+|   Vary: Accept-Encoding
+|   Connection: close
+|   Content-Type: text/html
+|   
+|_  (Request type: HEAD)
+|_http-wordpress-users: [Error] Wordpress installation was not found. We couldn't find wp-login.php
+|_http-date: Thu, 29 Dec 2022 00:11:54 GMT; -1s from local time.
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+| http-errors: 
+| Spidering limited to: maxpagecount=40; withinhost=10.10.213.223
+|   Found the following error pages: 
+|   
+|   Error Code: 404
+|_  	http://10.10.213.223:80/manual
+| http-sitemap-generator: 
+|   Directory structure:
+|     /
+|       Other: 1
+|     /icons/
+|       png: 1
+|   Longest directory structure:
+|     Depth: 1
+|     Dir: /icons/
+|   Total files found (by extension):
+|_    Other: 1; png: 1
+|_http-feed: Couldn't find any feeds.
+|_http-jsonp-detection: Couldn't find any JSONP endpoints.
+|_http-drupal-enum: Nothing found amongst the top 100 resources,use --script-args number=<number|all> for deeper analysis)
+|_http-server-header: Apache/2.4.7 (Ubuntu)
+| http-vhosts: 
+|_128 names had status 200
+|_http-wordpress-enum: Nothing found amongst the top 100 resources,use --script-args search-limit=<number|all> for deeper analysis)
+|_http-chrono: Request times for /; avg: 488.36ms; min: 454.78ms; max: 542.10ms
+| http-useragent-tester: 
+|   Status for browser useragent: 200
+|   Allowed User Agents: 
+|     Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)
+|     libwww
+|     lwp-trivial
+|     libcurl-agent/1.0
+|     PHP/
+|     Python-urllib/2.5
+|     GT::WWW
+|     Snoopy
+|     MFC_Tear_Sample
+|     HTTP::Lite
+|     PHPCrawl
+|     URI::Fetch
+|     Zend_Http_Client
+|     http client
+|     PECL::HTTP
+|     Wget/1.13.4 (linux-gnu)
+|_    WWW-Mechanize/1.34
+|_http-litespeed-sourcecode-download: Request with null byte did not work. This web server might not be vulnerable
+|_http-fetch: Please enter the complete path of the directory to save data in.
+|_http-config-backup: ERROR: Script execution failed (use -d to debug)
+|_http-title: Apache2 Ubuntu Default Page: It works
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+| http-methods: 
+|_  Supported Methods: POST OPTIONS GET HEAD
+| http-php-version: Logo query returned unknown hash 14d2187b1af16860e4f5a8ca65f3e7bc
+|_Credits query returned unknown hash 14d2187b1af16860e4f5a8ca65f3e7bc
+|_http-malware-host: Host appears to be clean
+| http-grep: 
+|   (1) http://10.10.213.223:80/manual: 
+|     (1) ip: 
+|_      + 10.10.213.223
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Dec 28 17:12:15 2022 -- 1 IP address (1 host up) scanned in 33.84 seconds
