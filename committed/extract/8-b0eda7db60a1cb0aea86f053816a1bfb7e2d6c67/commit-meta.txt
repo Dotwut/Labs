@@ -1,0 +1,6 @@
+tree 08178a40f4b3585566b539985399f51bbcc7ae22
+parent 441daaaa600aef8021f273c8c66404d5283ed83e
+author fumenoid <fumenoid@gmail.com> 1644741043 -0800
+committer fumenoid <fumenoid@gmail.com> 1644741043 -0800
+
+Connecting to db logic added

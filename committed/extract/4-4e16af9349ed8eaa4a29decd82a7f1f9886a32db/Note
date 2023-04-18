@@ -1,0 +1,7 @@
+# Branch DBint
+
+This branch is being used to test the code with the mysql server.
+
+## Reminder
+
+Please don't hardcode password, use enviroment variables where possible. 
