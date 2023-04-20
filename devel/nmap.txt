@@ -1,0 +1,40 @@
+# Nmap 7.93 scan initiated Thu Apr 20 14:07:03 2023 as: nmap -sT -sC -A -Pn -T4 --script=vuln -oN nmap.txt 10.129.239.215
+Pre-scan script results:
+| broadcast-avahi-dos: 
+|   Discovered hosts:
+|     224.0.0.251
+|   After NULL UDP avahi packet DoS (CVE-2011-1002).
+|_  Hosts are all up (not vulnerable).
+Nmap scan report for 10.129.239.215
+Host is up (0.088s latency).
+Not shown: 998 filtered tcp ports (no-response)
+PORT   STATE SERVICE VERSION
+21/tcp open  ftp     Microsoft ftpd
+80/tcp open  http    Microsoft IIS httpd 7.5
+|_http-server-header: Microsoft-IIS/7.5
+| vulners: 
+|   cpe:/a:microsoft:internet_information_services:7.5: 
+|     	CVE-2010-3972	10.0	https://vulners.com/cve/CVE-2010-3972
+|     	SSV:20122	9.3	https://vulners.com/seebug/SSV:20122	*EXPLOIT*
+|     	CVE-2010-2730	9.3	https://vulners.com/cve/CVE-2010-2730
+|     	SSV:20121	4.3	https://vulners.com/seebug/SSV:20121	*EXPLOIT*
+|_    	CVE-2010-1899	4.3	https://vulners.com/cve/CVE-2010-1899
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose|phone|specialized
+Running (JUST GUESSING): Microsoft Windows 2008|7|Vista|Phone|8.1|2012 (91%)
+OS CPE: cpe:/o:microsoft:windows_server_2008:r2 cpe:/o:microsoft:windows_7 cpe:/o:microsoft:windows_8 cpe:/o:microsoft:windows_vista::- cpe:/o:microsoft:windows_vista::sp1 cpe:/o:microsoft:windows cpe:/o:microsoft:windows_8.1 cpe:/o:microsoft:windows_server_2012
+Aggressive OS guesses: Microsoft Windows 7 or Windows Server 2008 R2 (91%), Microsoft Windows Server 2008 R2 (91%), Microsoft Windows Server 2008 R2 SP1 or Windows 8 (91%), Microsoft Windows 7 (91%), Microsoft Windows 7 Professional or Windows 8 (91%), Microsoft Windows 7 SP1 or Windows Server 2008 SP2 or 2008 R2 SP1 (91%), Microsoft Windows Vista SP0 or SP1, Windows Server 2008 SP1, or Windows 7 (91%), Microsoft Windows Vista SP2 (91%), Microsoft Windows Server 2008 R2 SP1 (90%), Microsoft Windows Vista SP2, Windows 7 SP1, or Windows Server 2008 (90%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 2 hops
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+TRACEROUTE (using proto 1/icmp)
+HOP RTT      ADDRESS
+1   89.44 ms 10.10.14.1
+2   88.84 ms 10.129.239.215
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Apr 20 14:12:00 2023 -- 1 IP address (1 host up) scanned in 296.58 seconds
