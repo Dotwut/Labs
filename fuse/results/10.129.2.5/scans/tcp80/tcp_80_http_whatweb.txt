@@ -1,0 +1,45 @@
+WhatWeb report for http://10.129.2.5:80
+Status    : 200 OK
+Title     : <None>
+IP        : 10.129.2.5
+Country   : RESERVED, ZZ
+
+Summary   : HTTPServer[Microsoft-IIS/10.0], Meta-Refresh-Redirect[http://fuse.fabricorp.local/papercut/logs/html/index.htm], Microsoft-IIS[10.0]
+
+Detected Plugins:
+[ HTTPServer ]
+	HTTP server header string. This plugin also attempts to
+	identify the operating system from the server header.
+
+	String       : Microsoft-IIS/10.0 (from server string)
+
+[ Meta-Refresh-Redirect ]
+	Meta refresh tag is a deprecated URL element that can be
+	used to optionally wait x seconds before reloading the
+	current page or loading a new page. More info:
+	https://secure.wikimedia.org/wikipedia/en/wiki/Meta_refresh
+
+	String       : http://fuse.fabricorp.local/papercut/logs/html/index.htm
+
+[ Microsoft-IIS ]
+	Microsoft Internet Information Services (IIS) for Windows
+	Server is a flexible, secure and easy-to-manage Web server
+	for hosting anything on the Web. From media streaming to
+	web application hosting, IIS's scalable and open
+	architecture is ready to handle the most demanding tasks.
+
+	Version      : 10.0
+	Website     : http://www.iis.net/
+
+HTTP Headers:
+	HTTP/1.1 200 OK
+	Content-Type: text/html
+	Last-Modified: Sat, 30 May 2020 00:01:51 GMT
+	Accept-Ranges: bytes
+	ETag: "2c834e851536d61:0"
+	Server: Microsoft-IIS/10.0
+	Date: Sun, 23 Apr 2023 17:51:40 GMT
+	Connection: close
+	Content-Length: 103
+
+

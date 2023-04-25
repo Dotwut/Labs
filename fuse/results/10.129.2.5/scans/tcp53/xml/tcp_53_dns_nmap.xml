@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Sun Apr 23 11:38:38 2023 as: nmap -vv -&#45;reason -Pn -T4 -sV -p 53 &quot;-&#45;script=banner,(dns* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN /home/dotwut/Labs/fuse/results/10.129.2.5/scans/tcp53/tcp_53_dns_nmap.txt -oX /home/dotwut/Labs/fuse/results/10.129.2.5/scans/tcp53/xml/tcp_53_dns_nmap.xml 10.129.2.5 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -T4 -sV -p 53 &quot;-&#45;script=banner,(dns* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN /home/dotwut/Labs/fuse/results/10.129.2.5/scans/tcp53/tcp_53_dns_nmap.txt -oX /home/dotwut/Labs/fuse/results/10.129.2.5/scans/tcp53/xml/tcp_53_dns_nmap.xml 10.129.2.5" start="1682271518" startstr="Sun Apr 23 11:38:38 2023" version="7.93" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="1" services="53"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1682271519"/>
+<taskend task="NSE" time="1682271519"/>
+<taskbegin task="NSE" time="1682271519"/>
+<taskend task="NSE" time="1682271519"/>
+<taskbegin task="NSE" time="1682271519"/>
+<taskend task="NSE" time="1682271519"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1682271519"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1682271519"/>
+<taskbegin task="Connect Scan" time="1682271519"/>
+<taskend task="Connect Scan" time="1682271519" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1682271519"/>
+<taskend task="Service scan" time="1682271526" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1682271526"/>
+<taskend task="NSE" time="1682271541"/>
+<taskbegin task="NSE" time="1682271541"/>
+<taskend task="NSE" time="1682271541"/>
+<taskbegin task="NSE" time="1682271541"/>
+<taskend task="NSE" time="1682271541"/>
+<host starttime="1682271519" endtime="1682271541"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.129.2.5" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="domain" product="Simple DNS Plus" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:jh_software:simple_dns_plus</cpe><cpe>cpe:/o:microsoft:windows</cpe></service><script id="dns-nsec-enum" output="Can&apos;t determine domain for host 10.129.2.5; use dns-nsec-enum.domains script arg."/><script id="dns-nsec3-enum" output="Can&apos;t determine domain for host 10.129.2.5; use dns-nsec3-enum.domains script arg."/></port>
+</ports>
+<hostscript><script id="dns-brute" output="Can&apos;t guess domain of &quot;10.129.2.5&quot;; use dns-brute.domain script argument."/></hostscript><times srtt="86992" rttvar="86992" to="434960"/>
+</host>
+<taskbegin task="NSE" time="1682271541"/>
+<taskend task="NSE" time="1682271541"/>
+<taskbegin task="NSE" time="1682271541"/>
+<taskend task="NSE" time="1682271541"/>
+<taskbegin task="NSE" time="1682271541"/>
+<taskend task="NSE" time="1682271541"/>
+<runstats><finished time="1682271541" timestr="Sun Apr 23 11:39:01 2023" summary="Nmap done at Sun Apr 23 11:39:01 2023; 1 IP address (1 host up) scanned in 23.07 seconds" elapsed="23.07" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

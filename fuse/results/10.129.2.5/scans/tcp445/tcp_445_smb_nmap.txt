@@ -1,0 +1,83 @@
+# Nmap 7.93 scan initiated Sun Apr 23 11:38:38 2023 as: nmap -vv --reason -Pn -T4 -sV -p 445 "--script=banner,(nbstat or smb* or ssl*) and not (brute or broadcast or dos or external or fuzzer)" -oN /home/dotwut/Labs/fuse/results/10.129.2.5/scans/tcp445/tcp_445_smb_nmap.txt -oX /home/dotwut/Labs/fuse/results/10.129.2.5/scans/tcp445/xml/tcp_445_smb_nmap.xml 10.129.2.5
+Nmap scan report for 10.129.2.5
+Host is up, received user-set (0.088s latency).
+Scanned at 2023-04-23 11:38:40 MDT for 358s
+
+PORT    STATE SERVICE      REASON  VERSION
+445/tcp open  microsoft-ds syn-ack Windows Server 2016 Standard 14393 microsoft-ds (workgroup: FABRICORP)
+|_smb-enum-services: ERROR: Script execution failed (use -d to debug)
+Service Info: Host: FUSE; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb-protocols: 
+|   dialects: 
+|     NT LM 0.12 (SMBv1) [dangerous, but default]
+|     202
+|     210
+|     300
+|     302
+|_    311
+|_smb-print-text: false
+| smb-mbenum: 
+|_  ERROR: Call to Browser Service failed with status = 2184
+| smb-enum-shares: 
+|   note: ERROR: Enumerating shares failed, guessing at common ones (NT_STATUS_ACCESS_DENIED)
+|   account_used: <blank>
+|   \\10.129.2.5\ADMIN$: 
+|     warning: Couldn't get details for share: NT_STATUS_ACCESS_DENIED
+|     Anonymous access: <none>
+|   \\10.129.2.5\C$: 
+|     warning: Couldn't get details for share: NT_STATUS_ACCESS_DENIED
+|     Anonymous access: <none>
+|   \\10.129.2.5\IPC$: 
+|     warning: Couldn't get details for share: NT_STATUS_ACCESS_DENIED
+|     Anonymous access: READ
+|   \\10.129.2.5\NETLOGON: 
+|     warning: Couldn't get details for share: NT_STATUS_ACCESS_DENIED
+|     Anonymous access: <none>
+|   \\10.129.2.5\PRINT$: 
+|     warning: Couldn't get details for share: NT_STATUS_ACCESS_DENIED
+|_    Anonymous access: <none>
+| smb2-time: 
+|   date: 2023-04-23T17:52:05
+|_  start_date: 2023-04-23T17:47:20
+|_smb-vuln-ms10-061: NT_STATUS_ACCESS_DENIED
+| smb-security-mode: 
+|   account_used: <blank>
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: required
+| smb-os-discovery: 
+|   OS: Windows Server 2016 Standard 14393 (Windows Server 2016 Standard 6.3)
+|   Computer name: Fuse
+|   NetBIOS computer name: FUSE\x00
+|   Domain name: fabricorp.local
+|   Forest name: fabricorp.local
+|   FQDN: Fuse.fabricorp.local
+|_  System time: 2023-04-23T10:51:48-07:00
+| smb2-security-mode: 
+|   311: 
+|_    Message signing enabled and required
+| smb2-capabilities: 
+|   202: 
+|     Distributed File System
+|   210: 
+|     Distributed File System
+|     Leasing
+|     Multi-credit operations
+|   300: 
+|     Distributed File System
+|     Leasing
+|     Multi-credit operations
+|   302: 
+|     Distributed File System
+|     Leasing
+|     Multi-credit operations
+|   311: 
+|     Distributed File System
+|     Leasing
+|_    Multi-credit operations
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Apr 23 11:44:38 2023 -- 1 IP address (1 host up) scanned in 359.74 seconds
