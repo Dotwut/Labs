@@ -1,0 +1,57 @@
+# Nmap 7.93 scan initiated Sun Apr 23 11:37:20 2023 as: nmap -vv --reason -Pn -T4 -sV -sC --version-all -A --osscan-guess -oN /home/dotwut/Labs/fuse/results/10.129.2.5/scans/_quick_tcp_nmap.txt -oX /home/dotwut/Labs/fuse/results/10.129.2.5/scans/xml/_quick_tcp_nmap.xml 10.129.2.5
+Nmap scan report for 10.129.2.5
+Host is up, received user-set (0.090s latency).
+Scanned at 2023-04-23 11:37:21 MDT for 76s
+Not shown: 988 filtered tcp ports (no-response)
+PORT     STATE SERVICE      REASON  VERSION
+53/tcp   open  domain       syn-ack Simple DNS Plus
+80/tcp   open  http         syn-ack Microsoft IIS httpd 10.0
+|_http-server-header: Microsoft-IIS/10.0
+|_http-title: Site doesn't have a title (text/html).
+| http-methods: 
+|   Supported Methods: OPTIONS TRACE GET HEAD POST
+|_  Potentially risky methods: TRACE
+88/tcp   open  kerberos-sec syn-ack Microsoft Windows Kerberos (server time: 2023-04-23 17:50:32Z)
+135/tcp  open  msrpc        syn-ack Microsoft Windows RPC
+139/tcp  open  netbios-ssn  syn-ack Microsoft Windows netbios-ssn
+389/tcp  open  ldap         syn-ack Microsoft Windows Active Directory LDAP (Domain: fabricorp.local, Site: Default-First-Site-Name)
+445/tcp  open  microsoft-ds syn-ack Windows Server 2016 Standard 14393 microsoft-ds (workgroup: FABRICORP)
+464/tcp  open  kpasswd5?    syn-ack
+593/tcp  open  ncacn_http   syn-ack Microsoft Windows RPC over HTTP 1.0
+636/tcp  open  tcpwrapped   syn-ack
+3268/tcp open  ldap         syn-ack Microsoft Windows Active Directory LDAP (Domain: fabricorp.local, Site: Default-First-Site-Name)
+3269/tcp open  tcpwrapped   syn-ack
+Service Info: Host: FUSE; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb-os-discovery: 
+|   OS: Windows Server 2016 Standard 14393 (Windows Server 2016 Standard 6.3)
+|   Computer name: Fuse
+|   NetBIOS computer name: FUSE\x00
+|   Domain name: fabricorp.local
+|   Forest name: fabricorp.local
+|   FQDN: Fuse.fabricorp.local
+|_  System time: 2023-04-23T10:50:57-07:00
+| smb2-time: 
+|   date: 2023-04-23T17:50:59
+|_  start_date: 2023-04-23T17:47:20
+|_clock-skew: mean: 2h33m00s, deviation: 4h02m30s, median: 12m59s
+| smb-security-mode: 
+|   account_used: <blank>
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: required
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 41526/tcp): CLEAN (Timeout)
+|   Check 2 (port 11923/tcp): CLEAN (Timeout)
+|   Check 3 (port 38305/udp): CLEAN (Timeout)
+|   Check 4 (port 47965/udp): CLEAN (Timeout)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+| smb2-security-mode: 
+|   311: 
+|_    Message signing enabled and required
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Apr 23 11:38:37 2023 -- 1 IP address (1 host up) scanned in 77.05 seconds

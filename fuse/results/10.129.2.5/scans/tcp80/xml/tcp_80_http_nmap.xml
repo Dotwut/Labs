@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Sun Apr 23 11:38:38 2023 as: nmap -vv -&#45;reason -Pn -T4 -sV -p 80 &quot;-&#45;script=banner,(http* or ssl*) and not (brute or broadcast or dos or external or http-slowloris* or fuzzer)&quot; -oN /home/dotwut/Labs/fuse/results/10.129.2.5/scans/tcp80/tcp_80_http_nmap.txt -oX /home/dotwut/Labs/fuse/results/10.129.2.5/scans/tcp80/xml/tcp_80_http_nmap.xml 10.129.2.5 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -T4 -sV -p 80 &quot;-&#45;script=banner,(http* or ssl*) and not (brute or broadcast or dos or external or http-slowloris* or fuzzer)&quot; -oN /home/dotwut/Labs/fuse/results/10.129.2.5/scans/tcp80/tcp_80_http_nmap.txt -oX /home/dotwut/Labs/fuse/results/10.129.2.5/scans/tcp80/xml/tcp_80_http_nmap.xml 10.129.2.5" start="1682271518" startstr="Sun Apr 23 11:38:38 2023" version="7.93" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="1" services="80"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1682271519"/>
+<taskend task="NSE" time="1682271519"/>
+<taskbegin task="NSE" time="1682271519"/>
+<taskend task="NSE" time="1682271519"/>
+<taskbegin task="NSE" time="1682271519"/>
+<taskend task="NSE" time="1682271519"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1682271519"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1682271519"/>
+<taskbegin task="Connect Scan" time="1682271519"/>
+<taskend task="Connect Scan" time="1682271520" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1682271520"/>
+<taskend task="Service scan" time="1682271526" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1682271526"/>
+<taskprogress task="NSE" time="1682271557" percent="99.67" remaining="1" etc="1682271557"/>
+<taskprogress task="NSE" time="1682271587" percent="99.67" remaining="1" etc="1682271587"/>
+<taskprogress task="NSE" time="1682271617" percent="99.67" remaining="1" etc="1682271617"/>
+<taskprogress task="NSE" time="1682271647" percent="99.67" remaining="1" etc="1682271647"/>
+<taskprogress task="NSE" time="1682271677" percent="99.67" remaining="1" etc="1682271677"/>
+<taskprogress task="NSE" time="1682271707" percent="99.67" remaining="1" etc="1682271708"/>
+<taskprogress task="NSE" time="1682271737" percent="99.67" remaining="1" etc="1682271738"/>
+<taskend task="NSE" time="1682271751"/>
+<taskbegin task="NSE" time="1682271751"/>
+<taskend task="NSE" time="1682271751"/>
+<taskbegin task="NSE" time="1682271751"/>
+<taskend task="NSE" time="1682271751"/>
+<host starttime="1682271519" endtime="1682271751"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.129.2.5" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Microsoft IIS httpd" version="10.0" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:internet_information_services:10.0</cpe><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-errors" output="Couldn&apos;t find any error pages."/><script id="http-dombased-xss" output="Couldn&apos;t find any DOM based XSS."/><script id="http-jsonp-detection" output="Couldn&apos;t find any JSONP endpoints."/><script id="http-useragent-tester" output="&#xa;  Status for browser useragent: 200&#xa;  Allowed User Agents: &#xa;    Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)&#xa;    libwww&#xa;    lwp-trivial&#xa;    libcurl-agent/1.0&#xa;    PHP/&#xa;    Python-urllib/2.5&#xa;    GT::WWW&#xa;    Snoopy&#xa;    MFC_Tear_Sample&#xa;    HTTP::Lite&#xa;    PHPCrawl&#xa;    URI::Fetch&#xa;    Zend_Http_Client&#xa;    http client&#xa;    PECL::HTTP&#xa;    Wget/1.13.4 (linux-gnu)&#xa;    WWW-Mechanize/1.34"><elem key="Status for browser useragent">200</elem>
+<table key="Allowed User Agents">
+<elem>Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)</elem>
+<elem>libwww</elem>
+<elem>lwp-trivial</elem>
+<elem>libcurl-agent/1.0</elem>
+<elem>PHP/</elem>
+<elem>Python-urllib/2.5</elem>
+<elem>GT::WWW</elem>
+<elem>Snoopy</elem>
+<elem>MFC_Tear_Sample</elem>
+<elem>HTTP::Lite</elem>
+<elem>PHPCrawl</elem>
+<elem>URI::Fetch</elem>
+<elem>Zend_Http_Client</elem>
+<elem>http client</elem>
+<elem>PECL::HTTP</elem>
+<elem>Wget/1.13.4 (linux-gnu)</elem>
+<elem>WWW-Mechanize/1.34</elem>
+</table>
+</script><script id="http-feed" output="Couldn&apos;t find any feeds."/><script id="http-devframework" output="Couldn&apos;t determine the underlying framework or CMS. Try increasing &apos;httpspider.maxpagecount&apos; value to spider more pages."/><script id="http-litespeed-sourcecode-download" output="Request with null byte did not work. This web server might not be vulnerable"/><script id="http-chrono" output="Request times for /; avg: 231.58ms; min: 202.37ms; max: 252.13ms"/><script id="http-referer-checker" output="Couldn&apos;t find any cross-domain scripts."/><script id="http-mobileversion-checker" output="No mobile version detected."/><script id="http-stored-xss" output="Couldn&apos;t find any stored XSS vulnerabilities."/><script id="http-php-version" output="Logo query returned unknown hash c1f51d55e1eec3bb27c988108d378881&#xa;Credits query returned unknown hash c1f51d55e1eec3bb27c988108d378881"/><script id="http-csrf" output="Couldn&apos;t find any CSRF vulnerabilities."/><script id="http-wordpress-users" output="[Error] Wordpress installation was not found. We couldn&apos;t find wp-login.php"/><script id="http-server-header" output="Microsoft-IIS/10.0"><elem>Microsoft-IIS/10.0</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: OPTIONS TRACE GET HEAD POST&#xa;  Potentially risky methods: TRACE"><table key="Supported Methods">
+<elem>OPTIONS</elem>
+<elem>TRACE</elem>
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+</table>
+<table key="Potentially risky methods">
+<elem>TRACE</elem>
+</table>
+</script><script id="http-sitemap-generator" output="&#xa;  Directory structure:&#xa;    /&#xa;      Other: 1&#xa;  Longest directory structure:&#xa;    Depth: 0&#xa;    Dir: /&#xa;  Total files found (by extension):&#xa;    Other: 1&#xa;"/><script id="http-fetch" output="Please enter the complete path of the directory to save data in."><elem key="ERROR">Please enter the complete path of the directory to save data in.</elem>
+</script><script id="http-comments-displayer" output="Couldn&apos;t find any comments."/><script id="http-wordpress-enum" output="Nothing found amongst the top 100 resources,use -&#45;script-args search-limit=&lt;number|all&gt; for deeper analysis)"/><script id="http-drupal-enum" output="Nothing found amongst the top 100 resources,use -&#45;script-args number=&lt;number|all&gt; for deeper analysis)"/><script id="http-date" output="Sun, 23 Apr 2023 17:51:51 GMT; +13m00s from local time."><elem key="date">2023-04-23T17:51:51+00:00</elem>
+<elem key="delta">780.0</elem>
+</script><script id="http-title" output="Site doesn&apos;t have a title (text/html)."></script><script id="http-malware-host" output="Host appears to be clean"/><script id="http-config-backup" output="ERROR: Script execution failed (use -d to debug)"/><script id="http-headers" output="&#xa;  Content-Length: 103&#xa;  Content-Type: text/html&#xa;  Last-Modified: Sat, 30 May 2020 00:01:51 GMT&#xa;  Accept-Ranges: bytes&#xa;  ETag: &quot;2c834e851536d61:0&quot;&#xa;  Server: Microsoft-IIS/10.0&#xa;  Date: Sun, 23 Apr 2023 17:51:48 GMT&#xa;  Connection: close&#xa;  &#xa;  (Request type: HEAD)&#xa;"/><script id="http-vhosts" output="&#xa;128 names had status 200"/><script id="http-security-headers" output=""></script></port>
+</ports>
+<times srtt="86929" rttvar="86929" to="434645"/>
+</host>
+<taskbegin task="NSE" time="1682271751"/>
+<taskend task="NSE" time="1682271751"/>
+<taskbegin task="NSE" time="1682271751"/>
+<taskend task="NSE" time="1682271751"/>
+<taskbegin task="NSE" time="1682271751"/>
+<taskend task="NSE" time="1682271751"/>
+<runstats><finished time="1682271751" timestr="Sun Apr 23 11:42:31 2023" summary="Nmap done at Sun Apr 23 11:42:31 2023; 1 IP address (1 host up) scanned in 233.66 seconds" elapsed="233.66" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
