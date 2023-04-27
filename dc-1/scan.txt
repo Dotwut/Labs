@@ -1,0 +1,152 @@
+# Nmap 7.93 scan initiated Wed Apr 26 13:27:34 2023 as: nmap -vvv -p 22,80,111,40238 -oN scan.txt -A -sC -Pn -T4 --script=(vuln) 192.168.226.193
+Pre-scan script results:
+| broadcast-avahi-dos: 
+|   Discovered hosts:
+|     224.0.0.251
+|   After NULL UDP avahi packet DoS (CVE-2011-1002).
+|_  Hosts are all up (not vulnerable).
+Nmap scan report for 192.168.226.193
+Host is up, received user-set (0.074s latency).
+Scanned at 2023-04-26 13:28:08 MDT for 236s
+
+PORT      STATE SERVICE REASON  VERSION
+22/tcp    open  ssh     syn-ack OpenSSH 6.0p1 Debian 4+deb7u7 (protocol 2.0)
+| vulners: 
+|   cpe:/a:openbsd:openssh:6.0p1: 
+|     	CVE-2015-5600	8.5	https://vulners.com/cve/CVE-2015-5600
+|     	SSV:61450	7.5	https://vulners.com/seebug/SSV:61450	*EXPLOIT*
+|     	CVE-2014-1692	7.5	https://vulners.com/cve/CVE-2014-1692
+|     	CVE-2015-6564	6.9	https://vulners.com/cve/CVE-2015-6564
+|     	SSV:61911	5.8	https://vulners.com/seebug/SSV:61911	*EXPLOIT*
+|     	CVE-2014-2653	5.8	https://vulners.com/cve/CVE-2014-2653
+|     	CVE-2014-2532	5.8	https://vulners.com/cve/CVE-2014-2532
+|     	SSV:60656	5.0	https://vulners.com/seebug/SSV:60656	*EXPLOIT*
+|     	CVE-2018-15919	5.0	https://vulners.com/cve/CVE-2018-15919
+|     	CVE-2010-5107	5.0	https://vulners.com/cve/CVE-2010-5107
+|     	SSV:90447	4.6	https://vulners.com/seebug/SSV:90447	*EXPLOIT*
+|     	CVE-2016-0778	4.6	https://vulners.com/cve/CVE-2016-0778
+|     	CVE-2020-14145	4.3	https://vulners.com/cve/CVE-2020-14145
+|     	CVE-2015-5352	4.3	https://vulners.com/cve/CVE-2015-5352
+|     	CVE-2016-0777	4.0	https://vulners.com/cve/CVE-2016-0777
+|_    	CVE-2015-6563	1.9	https://vulners.com/cve/CVE-2015-6563
+80/tcp    open  http    syn-ack Apache httpd 2.2.22 ((Debian))
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-jsonp-detection: Couldn't find any JSONP endpoints.
+| http-csrf: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=192.168.226.193
+|   Found the following possible CSRF vulnerabilities: 
+|     
+|     Path: http://192.168.226.193:80/
+|     Form id: user-login-form
+|     Form action: /node?destination=node
+|     
+|     Path: http://192.168.226.193:80/node?destination=node
+|     Form id: user-login-form
+|     Form action: /node?destination=node
+|     
+|     Path: http://192.168.226.193:80/user/password
+|     Form id: user-pass
+|     Form action: /user/password
+|     
+|     Path: http://192.168.226.193:80/user/register
+|     Form id: user-register-form
+|     Form action: /user/register
+|     
+|     Path: http://192.168.226.193:80/user
+|     Form id: user-login
+|     Form action: /user
+|     
+|     Path: http://192.168.226.193:80/user/
+|     Form id: user-login
+|_    Form action: /user/
+| http-vuln-cve2014-3704: 
+|   VULNERABLE:
+|   Drupal - pre Auth SQL Injection Vulnerability
+|     State: VULNERABLE (Exploitable)
+|     IDs:  CVE:CVE-2014-3704
+|         The expandArguments function in the database abstraction API in
+|         Drupal core 7.x before 7.32 does not properly construct prepared
+|         statements, which allows remote attackers to conduct SQL injection
+|         attacks via an array containing crafted keys.
+|           
+|     Disclosure date: 2014-10-15
+|     References:
+|       https://www.sektioneins.de/en/advisories/advisory-012014-drupal-pre-auth-sql-injection-vulnerability.html
+|       https://www.drupal.org/SA-CORE-2014-005
+|       http://www.securityfocus.com/bid/70595
+|_      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3704
+| http-enum: 
+|   /rss.xml: RSS or Atom feed
+|   /robots.txt: Robots file
+|   /UPGRADE.txt: Drupal file
+|   /INSTALL.txt: Drupal file
+|   /INSTALL.mysql.txt: Drupal file
+|   /INSTALL.pgsql.txt: Drupal file
+|   /: Drupal version 7 
+|   /README: Interesting, a readme.
+|   /README.txt: Interesting, a readme.
+|   /0/: Potentially interesting folder
+|_  /user/: Potentially interesting folder
+|_http-server-header: Apache/2.2.22 (Debian)
+|_http-wordpress-users: [Error] Wordpress installation was not found. We couldn't find wp-login.php
+|_http-litespeed-sourcecode-download: Request with null byte did not work. This web server might not be vulnerable
+| vulners: 
+|   cpe:/a:apache:http_server:2.2.22: 
+|     	CVE-2017-7679	7.5	https://vulners.com/cve/CVE-2017-7679
+|     	CVE-2017-3169	7.5	https://vulners.com/cve/CVE-2017-3169
+|     	CVE-2017-3167	7.5	https://vulners.com/cve/CVE-2017-3167
+|     	SSV:60427	6.9	https://vulners.com/seebug/SSV:60427	*EXPLOIT*
+|     	SSV:60386	6.9	https://vulners.com/seebug/SSV:60386	*EXPLOIT*
+|     	SSV:60069	6.9	https://vulners.com/seebug/SSV:60069	*EXPLOIT*
+|     	CVE-2012-0883	6.9	https://vulners.com/cve/CVE-2012-0883
+|     	PACKETSTORM:127546	6.8	https://vulners.com/packetstorm/PACKETSTORM:127546	*EXPLOIT*
+|     	CVE-2016-5387	6.8	https://vulners.com/cve/CVE-2016-5387
+|     	CVE-2014-0226	6.8	https://vulners.com/cve/CVE-2014-0226
+|     	1337DAY-ID-22451	6.8	https://vulners.com/zdt/1337DAY-ID-22451	*EXPLOIT*
+|     	CVE-2017-9788	6.4	https://vulners.com/cve/CVE-2017-9788
+|     	SSV:60788	5.1	https://vulners.com/seebug/SSV:60788	*EXPLOIT*
+|     	CVE-2013-1862	5.1	https://vulners.com/cve/CVE-2013-1862
+|     	SSV:96537	5.0	https://vulners.com/seebug/SSV:96537	*EXPLOIT*
+|     	SSV:62058	5.0	https://vulners.com/seebug/SSV:62058	*EXPLOIT*
+|     	SSV:61874	5.0	https://vulners.com/seebug/SSV:61874	*EXPLOIT*
+|     	EXPLOITPACK:C8C256BE0BFF5FE1C0405CB0AA9C075D	5.0	https://vulners.com/exploitpack/EXPLOITPACK:C8C256BE0BFF5FE1C0405CB0AA9C075D	*EXPLOIT*
+|     	EDB-ID:42745	5.0	https://vulners.com/exploitdb/EDB-ID:42745	*EXPLOIT*
+|     	CVE-2017-9798	5.0	https://vulners.com/cve/CVE-2017-9798
+|     	CVE-2016-8743	5.0	https://vulners.com/cve/CVE-2016-8743
+|     	CVE-2014-0231	5.0	https://vulners.com/cve/CVE-2014-0231
+|     	CVE-2014-0098	5.0	https://vulners.com/cve/CVE-2014-0098
+|     	CVE-2013-6438	5.0	https://vulners.com/cve/CVE-2013-6438
+|     	CVE-2013-5704	5.0	https://vulners.com/cve/CVE-2013-5704
+|     	1337DAY-ID-28573	5.0	https://vulners.com/zdt/1337DAY-ID-28573	*EXPLOIT*
+|     	CVE-2012-0031	4.6	https://vulners.com/cve/CVE-2012-0031
+|     	SSV:60905	4.3	https://vulners.com/seebug/SSV:60905	*EXPLOIT*
+|     	SSV:60657	4.3	https://vulners.com/seebug/SSV:60657	*EXPLOIT*
+|     	SSV:60653	4.3	https://vulners.com/seebug/SSV:60653	*EXPLOIT*
+|     	SSV:60345	4.3	https://vulners.com/seebug/SSV:60345	*EXPLOIT*
+|     	CVE-2016-4975	4.3	https://vulners.com/cve/CVE-2016-4975
+|     	CVE-2014-0118	4.3	https://vulners.com/cve/CVE-2014-0118
+|     	CVE-2013-1896	4.3	https://vulners.com/cve/CVE-2013-1896
+|     	CVE-2012-4558	4.3	https://vulners.com/cve/CVE-2012-4558
+|     	CVE-2012-3499	4.3	https://vulners.com/cve/CVE-2012-3499
+|     	CVE-2012-0053	4.3	https://vulners.com/cve/CVE-2012-0053
+|     	CVE-2008-0455	4.3	https://vulners.com/cve/CVE-2008-0455
+|     	CVE-2012-2687	2.6	https://vulners.com/cve/CVE-2012-2687
+|_    	CVE-2023-28625	0.0	https://vulners.com/cve/CVE-2023-28625
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+111/tcp   open  rpcbind syn-ack 2-4 (RPC #100000)
+| rpcinfo: 
+|   program version    port/proto  service
+|   100000  2,3,4        111/tcp   rpcbind
+|   100000  2,3,4        111/udp   rpcbind
+|   100000  3,4          111/tcp6  rpcbind
+|   100000  3,4          111/udp6  rpcbind
+|   100024  1          35685/udp6  status
+|   100024  1          40238/tcp   status
+|   100024  1          56691/udp   status
+|_  100024  1          58362/tcp6  status
+40238/tcp open  status  syn-ack 1 (RPC #100024)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Apr 26 13:32:04 2023 -- 1 IP address (1 host up) scanned in 269.69 seconds
