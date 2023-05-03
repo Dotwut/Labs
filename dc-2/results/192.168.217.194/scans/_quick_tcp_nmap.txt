@@ -1,0 +1,15 @@
+# Nmap 7.93 scan initiated Tue May  2 17:54:51 2023 as: nmap -vv --reason -Pn -T4 -sV -sC --version-all -A --osscan-guess -oN /home/dotwut/Labs/dc-2/results/192.168.217.194/scans/_quick_tcp_nmap.txt -oX /home/dotwut/Labs/dc-2/results/192.168.217.194/scans/xml/_quick_tcp_nmap.xml 192.168.217.194
+Nmap scan report for 192.168.217.194
+Host is up, received user-set (0.080s latency).
+Scanned at 2023-05-02 17:54:51 MDT for 13s
+Not shown: 999 closed tcp ports (conn-refused)
+PORT   STATE SERVICE REASON  VERSION
+80/tcp open  http    syn-ack Apache httpd 2.4.10 ((Debian))
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-title: Did not follow redirect to http://dc-2/
+|_http-server-header: Apache/2.4.10 (Debian)
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue May  2 17:55:04 2023 -- 1 IP address (1 host up) scanned in 12.83 seconds
