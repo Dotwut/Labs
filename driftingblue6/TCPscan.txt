@@ -1,0 +1,67 @@
+# Nmap 7.93 scan initiated Tue May  9 13:04:08 2023 as: nmap -vvv -p 80 -oN TCPscan.txt -A -sC -Pn -T4 --script=(vuln) 192.168.231.219
+Pre-scan script results:
+| broadcast-avahi-dos: 
+|   Discovered hosts:
+|     224.0.0.251
+|   After NULL UDP avahi packet DoS (CVE-2011-1002).
+|_  Hosts are all up (not vulnerable).
+Nmap scan report for 192.168.231.219
+Host is up, received user-set (0.074s latency).
+Scanned at 2023-05-09 13:04:42 MDT for 29s
+
+PORT   STATE SERVICE REASON  VERSION
+80/tcp open  http    syn-ack Apache httpd 2.2.22 ((Debian))
+|_http-jsonp-detection: Couldn't find any JSONP endpoints.
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-server-header: Apache/2.2.22 (Debian)
+| http-enum: 
+|_  /robots.txt: Robots file
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-wordpress-users: [Error] Wordpress installation was not found. We couldn't find wp-login.php
+| vulners: 
+|   cpe:/a:apache:http_server:2.2.22: 
+|     	CVE-2017-7679	7.5	https://vulners.com/cve/CVE-2017-7679
+|     	CVE-2017-3169	7.5	https://vulners.com/cve/CVE-2017-3169
+|     	CVE-2017-3167	7.5	https://vulners.com/cve/CVE-2017-3167
+|     	SSV:60427	6.9	https://vulners.com/seebug/SSV:60427	*EXPLOIT*
+|     	SSV:60386	6.9	https://vulners.com/seebug/SSV:60386	*EXPLOIT*
+|     	SSV:60069	6.9	https://vulners.com/seebug/SSV:60069	*EXPLOIT*
+|     	CVE-2012-0883	6.9	https://vulners.com/cve/CVE-2012-0883
+|     	PACKETSTORM:127546	6.8	https://vulners.com/packetstorm/PACKETSTORM:127546	*EXPLOIT*
+|     	CVE-2016-5387	6.8	https://vulners.com/cve/CVE-2016-5387
+|     	CVE-2014-0226	6.8	https://vulners.com/cve/CVE-2014-0226
+|     	1337DAY-ID-22451	6.8	https://vulners.com/zdt/1337DAY-ID-22451	*EXPLOIT*
+|     	CVE-2017-9788	6.4	https://vulners.com/cve/CVE-2017-9788
+|     	SSV:60788	5.1	https://vulners.com/seebug/SSV:60788	*EXPLOIT*
+|     	CVE-2013-1862	5.1	https://vulners.com/cve/CVE-2013-1862
+|     	SSV:96537	5.0	https://vulners.com/seebug/SSV:96537	*EXPLOIT*
+|     	SSV:62058	5.0	https://vulners.com/seebug/SSV:62058	*EXPLOIT*
+|     	SSV:61874	5.0	https://vulners.com/seebug/SSV:61874	*EXPLOIT*
+|     	EXPLOITPACK:C8C256BE0BFF5FE1C0405CB0AA9C075D	5.0	https://vulners.com/exploitpack/EXPLOITPACK:C8C256BE0BFF5FE1C0405CB0AA9C075D	*EXPLOIT*
+|     	EDB-ID:42745	5.0	https://vulners.com/exploitdb/EDB-ID:42745	*EXPLOIT*
+|     	CVE-2017-9798	5.0	https://vulners.com/cve/CVE-2017-9798
+|     	CVE-2016-8743	5.0	https://vulners.com/cve/CVE-2016-8743
+|     	CVE-2014-0231	5.0	https://vulners.com/cve/CVE-2014-0231
+|     	CVE-2014-0098	5.0	https://vulners.com/cve/CVE-2014-0098
+|     	CVE-2013-6438	5.0	https://vulners.com/cve/CVE-2013-6438
+|     	CVE-2013-5704	5.0	https://vulners.com/cve/CVE-2013-5704
+|     	1337DAY-ID-28573	5.0	https://vulners.com/zdt/1337DAY-ID-28573	*EXPLOIT*
+|     	CVE-2012-0031	4.6	https://vulners.com/cve/CVE-2012-0031
+|     	SSV:60905	4.3	https://vulners.com/seebug/SSV:60905	*EXPLOIT*
+|     	SSV:60657	4.3	https://vulners.com/seebug/SSV:60657	*EXPLOIT*
+|     	SSV:60653	4.3	https://vulners.com/seebug/SSV:60653	*EXPLOIT*
+|     	SSV:60345	4.3	https://vulners.com/seebug/SSV:60345	*EXPLOIT*
+|     	CVE-2016-4975	4.3	https://vulners.com/cve/CVE-2016-4975
+|     	CVE-2014-0118	4.3	https://vulners.com/cve/CVE-2014-0118
+|     	CVE-2013-1896	4.3	https://vulners.com/cve/CVE-2013-1896
+|     	CVE-2012-4558	4.3	https://vulners.com/cve/CVE-2012-4558
+|     	CVE-2012-3499	4.3	https://vulners.com/cve/CVE-2012-3499
+|     	CVE-2012-0053	4.3	https://vulners.com/cve/CVE-2012-0053
+|     	CVE-2008-0455	4.3	https://vulners.com/cve/CVE-2008-0455
+|     	CVE-2012-2687	2.6	https://vulners.com/cve/CVE-2012-2687
+|_    	CVE-2023-28625	0.0	https://vulners.com/cve/CVE-2023-28625
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue May  9 13:05:11 2023 -- 1 IP address (1 host up) scanned in 63.00 seconds

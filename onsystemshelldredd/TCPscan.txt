@@ -1,0 +1,35 @@
+# Nmap 7.93 scan initiated Fri May 26 17:34:55 2023 as: nmap -vvv -p 21,61000 -oN TCPscan.txt -A -sC -Pn -T4 --script=(vuln) 192.168.191.130
+Pre-scan script results:
+| broadcast-avahi-dos: 
+|   Discovered hosts:
+|     224.0.0.251
+|   After NULL UDP avahi packet DoS (CVE-2011-1002).
+|_  Hosts are all up (not vulnerable).
+Nmap scan report for 192.168.191.130
+Host is up, received user-set (0.071s latency).
+Scanned at 2023-05-26 17:35:29 MDT for 1s
+
+PORT      STATE SERVICE REASON  VERSION
+21/tcp    open  ftp     syn-ack vsftpd 3.0.3
+61000/tcp open  ssh     syn-ack OpenSSH 7.9p1 Debian 10+deb10u2 (protocol 2.0)
+| vulners: 
+|   cpe:/a:openbsd:openssh:7.9p1: 
+|     	EXPLOITPACK:98FE96309F9524B8C84C508837551A19	5.8	https://vulners.com/exploitpack/EXPLOITPACK:98FE96309F9524B8C84C508837551A19	*EXPLOIT*
+|     	EXPLOITPACK:5330EA02EBDE345BFC9D6DDDD97F9E97	5.8	https://vulners.com/exploitpack/EXPLOITPACK:5330EA02EBDE345BFC9D6DDDD97F9E97	*EXPLOIT*
+|     	EDB-ID:46516	5.8	https://vulners.com/exploitdb/EDB-ID:46516	*EXPLOIT*
+|     	EDB-ID:46193	5.8	https://vulners.com/exploitdb/EDB-ID:46193	*EXPLOIT*
+|     	CVE-2019-6111	5.8	https://vulners.com/cve/CVE-2019-6111
+|     	1337DAY-ID-32328	5.8	https://vulners.com/zdt/1337DAY-ID-32328	*EXPLOIT*
+|     	1337DAY-ID-32009	5.8	https://vulners.com/zdt/1337DAY-ID-32009	*EXPLOIT*
+|     	CVE-2021-41617	4.4	https://vulners.com/cve/CVE-2021-41617
+|     	CVE-2019-16905	4.4	https://vulners.com/cve/CVE-2019-16905
+|     	CVE-2020-14145	4.3	https://vulners.com/cve/CVE-2020-14145
+|     	CVE-2019-6110	4.0	https://vulners.com/cve/CVE-2019-6110
+|     	CVE-2019-6109	4.0	https://vulners.com/cve/CVE-2019-6109
+|     	CVE-2018-20685	2.6	https://vulners.com/cve/CVE-2018-20685
+|_    	PACKETSTORM:151227	0.0	https://vulners.com/packetstorm/PACKETSTORM:151227	*EXPLOIT*
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri May 26 17:35:30 2023 -- 1 IP address (1 host up) scanned in 35.94 seconds

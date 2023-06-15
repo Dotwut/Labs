@@ -1,0 +1,17 @@
+200      GET       26l      127w    10357c http://192.168.161.212/icons/openlogo-75.png
+200      GET      368l      933w    10701c http://192.168.161.212/
+200      GET      368l      933w    10701c http://192.168.161.212/index.html
+200      GET        1l        2w       12c http://192.168.161.212/robots.txt
+200      GET        4l        0w        4c http://192.168.161.212/secret/
+200      GET        0l        0w        0c http://192.168.161.212/secret/evil.php
+200      GET        4l        0w        4c http://192.168.161.212/secret/index.html
+200      GET        4l        0w        4c http://192.168.161.212/secret/
+200      GET        0l        0w        0c http://192.168.161.212/secret/evil.php
+200      GET        4l        0w        4c http://192.168.161.212/secret/index.html
+200      GET       26l      127w    10357c http://192.168.161.212/icons/openlogo-75.png
+200      GET      368l      933w    10701c http://192.168.161.212/
+200      GET      368l      933w    10701c http://192.168.161.212/index.html
+200      GET        1l        2w       12c http://192.168.161.212/robots.txt
+200      GET        4l        0w        4c http://192.168.161.212/secret/
+200      GET        0l        0w        0c http://192.168.161.212/secret/evil.php
+200      GET        4l        0w        4c http://192.168.161.212/secret/index.html

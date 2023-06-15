@@ -1,0 +1,154 @@
+# Nmap 7.93 scan initiated Thu Jun  1 09:49:12 2023 as: nmap -vvv -p 80,3306,7680 -oN TCPscan.txt -A -sC -Pn -T4 --script=(vuln) 192.168.164.248
+Pre-scan script results:
+| broadcast-avahi-dos: 
+|   Discovered hosts:
+|     224.0.0.251
+|   After NULL UDP avahi packet DoS (CVE-2011-1002).
+|_  Hosts are all up (not vulnerable).
+Nmap scan report for 192.168.164.248
+Host is up, received user-set (0.071s latency).
+Scanned at 2023-06-01 09:49:47 MDT for 358s
+
+PORT     STATE SERVICE    REASON  VERSION
+80/tcp   open  http       syn-ack Apache httpd 2.4.48 ((Win64) OpenSSL/1.1.1k PHP/7.3.29)
+|_http-jsonp-detection: Couldn't find any JSONP endpoints.
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+| http-slowloris-check: 
+|   VULNERABLE:
+|   Slowloris DOS attack
+|     State: LIKELY VULNERABLE
+|     IDs:  CVE:CVE-2007-6750
+|       Slowloris tries to keep many connections to the target web server open and hold
+|       them open as long as possible.  It accomplishes this by opening connections to
+|       the target web server and sending a partial request. By doing so, it starves
+|       the http server's resources causing Denial Of Service.
+|       
+|     Disclosure date: 2009-09-17
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6750
+|_      http://ha.ckers.org/slowloris/
+| http-enum: 
+|   /icons/: Potentially interesting folder w/ directory listing
+|   /testing/: Potentially interesting folder
+|_  /vendor/: Potentially interesting directory w/ listing on 'apache/2.4.48 (win64) openssl/1.1.1k php/7.3.29'
+| http-fileupload-exploiter: 
+|   
+|     Couldn't find a file-type field.
+|   
+|     Couldn't find a file-type field.
+|   
+|_    Couldn't find a file-type field.
+| http-sql-injection: 
+|   Possible sqli for queries:
+|     http://192.168.164.248:80/assets/js/?C=S%3BO%3DA%27%20OR%20sqlspider
+|     http://192.168.164.248:80/assets/js/?C=M%3BO%3DA%27%20OR%20sqlspider
+|     http://192.168.164.248:80/assets/js/?C=D%3BO%3DA%27%20OR%20sqlspider
+|     http://192.168.164.248:80/assets/js/?C=N%3BO%3DD%27%20OR%20sqlspider
+|     http://192.168.164.248:80/vendor/bootstrap/js/?C=M%3BO%3DA%27%20OR%20sqlspider
+|     http://192.168.164.248:80/vendor/bootstrap/js/?C=S%3BO%3DA%27%20OR%20sqlspider
+|     http://192.168.164.248:80/vendor/bootstrap/js/?C=D%3BO%3DA%27%20OR%20sqlspider
+|     http://192.168.164.248:80/vendor/bootstrap/js/?C=N%3BO%3DD%27%20OR%20sqlspider
+|     http://192.168.164.248:80/vendor/jquery/?C=D%3BO%3DA%27%20OR%20sqlspider
+|     http://192.168.164.248:80/vendor/jquery/?C=M%3BO%3DA%27%20OR%20sqlspider
+|     http://192.168.164.248:80/vendor/jquery/?C=S%3BO%3DA%27%20OR%20sqlspider
+|     http://192.168.164.248:80/vendor/jquery/?C=N%3BO%3DD%27%20OR%20sqlspider
+|     http://192.168.164.248:80/assets/js/?C=S%3BO%3DD%27%20OR%20sqlspider
+|     http://192.168.164.248:80/assets/js/?C=D%3BO%3DA%27%20OR%20sqlspider
+|     http://192.168.164.248:80/assets/js/?C=N%3BO%3DA%27%20OR%20sqlspider
+|     http://192.168.164.248:80/assets/js/?C=M%3BO%3DA%27%20OR%20sqlspider
+|     http://192.168.164.248:80/assets/?C=S%3BO%3DA%27%20OR%20sqlspider
+|     http://192.168.164.248:80/assets/?C=M%3BO%3DA%27%20OR%20sqlspider
+|     http://192.168.164.248:80/assets/?C=D%3BO%3DA%27%20OR%20sqlspider
+|     http://192.168.164.248:80/assets/?C=N%3BO%3DD%27%20OR%20sqlspider
+|     http://192.168.164.248:80/assets/js/?C=S%3BO%3DA%27%20OR%20sqlspider
+|     http://192.168.164.248:80/assets/js/?C=M%3BO%3DD%27%20OR%20sqlspider
+|     http://192.168.164.248:80/assets/js/?C=D%3BO%3DA%27%20OR%20sqlspider
+|     http://192.168.164.248:80/assets/js/?C=N%3BO%3DA%27%20OR%20sqlspider
+|     http://192.168.164.248:80/assets/js/?C=S%3BO%3DA%27%20OR%20sqlspider
+|     http://192.168.164.248:80/assets/js/?C=M%3BO%3DA%27%20OR%20sqlspider
+|     http://192.168.164.248:80/assets/js/?C=D%3BO%3DD%27%20OR%20sqlspider
+|_    http://192.168.164.248:80/assets/js/?C=N%3BO%3DA%27%20OR%20sqlspider
+|_http-server-header: Apache/2.4.48 (Win64) OpenSSL/1.1.1k PHP/7.3.29
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-wordpress-users: [Error] Wordpress installation was not found. We couldn't find wp-login.php
+| http-trace: TRACE is enabled
+| Headers:
+| Date: Thu, 01 Jun 2023 15:50:32 GMT
+| Server: Apache/2.4.48 (Win64) OpenSSL/1.1.1k PHP/7.3.29
+| Connection: close
+| Transfer-Encoding: chunked
+|_Content-Type: message/http
+|_http-litespeed-sourcecode-download: Request with null byte did not work. This web server might not be vulnerable
+| vulners: 
+|   cpe:/a:apache:http_server:2.4.48: 
+|     	PACKETSTORM:171631	7.5	https://vulners.com/packetstorm/PACKETSTORM:171631	*EXPLOIT*
+|     	EDB-ID:51193	7.5	https://vulners.com/exploitdb/EDB-ID:51193	*EXPLOIT*
+|     	CVE-2023-25690	7.5	https://vulners.com/cve/CVE-2023-25690
+|     	CVE-2022-31813	7.5	https://vulners.com/cve/CVE-2022-31813
+|     	CVE-2022-23943	7.5	https://vulners.com/cve/CVE-2022-23943
+|     	CVE-2022-22720	7.5	https://vulners.com/cve/CVE-2022-22720
+|     	CVE-2021-44790	7.5	https://vulners.com/cve/CVE-2021-44790
+|     	CVE-2021-39275	7.5	https://vulners.com/cve/CVE-2021-39275
+|     	CNVD-2022-73123	7.5	https://vulners.com/cnvd/CNVD-2022-73123
+|     	CNVD-2022-03225	7.5	https://vulners.com/cnvd/CNVD-2022-03225
+|     	CNVD-2021-102386	7.5	https://vulners.com/cnvd/CNVD-2021-102386
+|     	5C1BB960-90C1-5EBF-9BEF-F58BFFDFEED9	7.5	https://vulners.com/githubexploit/5C1BB960-90C1-5EBF-9BEF-F58BFFDFEED9	*EXPLOIT*
+|     	1337DAY-ID-38427	7.5	https://vulners.com/zdt/1337DAY-ID-38427	*EXPLOIT*
+|     	FDF3DFA1-ED74-5EE2-BF5C-BA752CA34AE8	6.8	https://vulners.com/githubexploit/FDF3DFA1-ED74-5EE2-BF5C-BA752CA34AE8	*EXPLOIT*
+|     	CVE-2021-40438	6.8	https://vulners.com/cve/CVE-2021-40438
+|     	CNVD-2022-03224	6.8	https://vulners.com/cnvd/CNVD-2022-03224
+|     	8AFB43C5-ABD4-52AD-BB19-24D7884FF2A2	6.8	https://vulners.com/githubexploit/8AFB43C5-ABD4-52AD-BB19-24D7884FF2A2	*EXPLOIT*
+|     	4810E2D9-AC5F-5B08-BFB3-DDAFA2F63332	6.8	https://vulners.com/githubexploit/4810E2D9-AC5F-5B08-BFB3-DDAFA2F63332	*EXPLOIT*
+|     	4373C92A-2755-5538-9C91-0469C995AA9B	6.8	https://vulners.com/githubexploit/4373C92A-2755-5538-9C91-0469C995AA9B	*EXPLOIT*
+|     	0095E929-7573-5E4A-A7FA-F6598A35E8DE	6.8	https://vulners.com/githubexploit/0095E929-7573-5E4A-A7FA-F6598A35E8DE	*EXPLOIT*
+|     	CVE-2022-28615	6.4	https://vulners.com/cve/CVE-2022-28615
+|     	CVE-2021-44224	6.4	https://vulners.com/cve/CVE-2021-44224
+|     	CVE-2022-22721	5.8	https://vulners.com/cve/CVE-2022-22721
+|     	CVE-2022-36760	5.1	https://vulners.com/cve/CVE-2022-36760
+|     	CVE-2023-27522	5.0	https://vulners.com/cve/CVE-2023-27522
+|     	CVE-2022-37436	5.0	https://vulners.com/cve/CVE-2022-37436
+|     	CVE-2022-30556	5.0	https://vulners.com/cve/CVE-2022-30556
+|     	CVE-2022-29404	5.0	https://vulners.com/cve/CVE-2022-29404
+|     	CVE-2022-28614	5.0	https://vulners.com/cve/CVE-2022-28614
+|     	CVE-2022-26377	5.0	https://vulners.com/cve/CVE-2022-26377
+|     	CVE-2022-22719	5.0	https://vulners.com/cve/CVE-2022-22719
+|     	CVE-2021-36160	5.0	https://vulners.com/cve/CVE-2021-36160
+|     	CVE-2021-34798	5.0	https://vulners.com/cve/CVE-2021-34798
+|     	CVE-2021-33193	5.0	https://vulners.com/cve/CVE-2021-33193
+|     	CVE-2006-20001	5.0	https://vulners.com/cve/CVE-2006-20001
+|     	CNVD-2022-73122	5.0	https://vulners.com/cnvd/CNVD-2022-73122
+|     	CNVD-2022-53584	5.0	https://vulners.com/cnvd/CNVD-2022-53584
+|     	CNVD-2022-53582	5.0	https://vulners.com/cnvd/CNVD-2022-53582
+|_    	CNVD-2022-03223	5.0	https://vulners.com/cnvd/CNVD-2022-03223
+| http-csrf: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=192.168.164.248
+|   Found the following possible CSRF vulnerabilities: 
+|     
+|     Path: http://192.168.164.248:80/
+|     Form id: contact
+|_    Form action: 
+3306/tcp open  mysql?     syn-ack
+| fingerprint-strings: 
+|   FourOhFourRequest, HTTPOptions, Kerberos, LPDString, NULL, SSLSessionReq, TLSSessionReq: 
+|_    Host '192.168.45.239' is not allowed to connect to this MariaDB server
+7680/tcp open  pando-pub? syn-ack
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port3306-TCP:V=7.93%I=7%D=6/1%Time=6478BE1B%P=x86_64-pc-linux-gnu%r(NUL
+SF:L,4D,"I\0\0\x01\xffj\x04Host\x20'192\.168\.45\.239'\x20is\x20not\x20all
+SF:owed\x20to\x20connect\x20to\x20this\x20MariaDB\x20server")%r(HTTPOption
+SF:s,4D,"I\0\0\x01\xffj\x04Host\x20'192\.168\.45\.239'\x20is\x20not\x20all
+SF:owed\x20to\x20connect\x20to\x20this\x20MariaDB\x20server")%r(SSLSession
+SF:Req,4D,"I\0\0\x01\xffj\x04Host\x20'192\.168\.45\.239'\x20is\x20not\x20a
+SF:llowed\x20to\x20connect\x20to\x20this\x20MariaDB\x20server")%r(TLSSessi
+SF:onReq,4D,"I\0\0\x01\xffj\x04Host\x20'192\.168\.45\.239'\x20is\x20not\x2
+SF:0allowed\x20to\x20connect\x20to\x20this\x20MariaDB\x20server")%r(Kerber
+SF:os,4D,"I\0\0\x01\xffj\x04Host\x20'192\.168\.45\.239'\x20is\x20not\x20al
+SF:lowed\x20to\x20connect\x20to\x20this\x20MariaDB\x20server")%r(FourOhFou
+SF:rRequest,4D,"I\0\0\x01\xffj\x04Host\x20'192\.168\.45\.239'\x20is\x20not
+SF:\x20allowed\x20to\x20connect\x20to\x20this\x20MariaDB\x20server")%r(LPD
+SF:String,4D,"I\0\0\x01\xffj\x04Host\x20'192\.168\.45\.239'\x20is\x20not\x
+SF:20allowed\x20to\x20connect\x20to\x20this\x20MariaDB\x20server");
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Jun  1 09:55:45 2023 -- 1 IP address (1 host up) scanned in 392.46 seconds

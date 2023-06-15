@@ -1,0 +1,12 @@
+nmap -vv --reason -Pn -T4 -sV -sC --version-all -A --osscan-guess -oN "/home/dotwut/Labs/conceal/results/10.129.228.122/scans/_quick_tcp_nmap.txt" -oX "/home/dotwut/Labs/conceal/results/10.129.228.122/scans/xml/_quick_tcp_nmap.xml" 10.129.228.122
+
+nmap -vv --reason -Pn -T4 -sV -sC --version-all -A --osscan-guess -p- -oN "/home/dotwut/Labs/conceal/results/10.129.228.122/scans/_full_tcp_nmap.txt" -oX "/home/dotwut/Labs/conceal/results/10.129.228.122/scans/xml/_full_tcp_nmap.xml" 10.129.228.122
+
+nmap -vv --reason -Pn -T4 -sV -sC --version-all -A --osscan-guess -oN "/home/dotwut/Labs/conceal/results/10.129.228.122/scans/_quick_tcp_nmap.txt" -oX "/home/dotwut/Labs/conceal/results/10.129.228.122/scans/xml/_quick_tcp_nmap.xml" 10.129.228.122
+
+nmap -vv --reason -Pn -T4 -sV -sC --version-all -A --osscan-guess -p- -oN "/home/dotwut/Labs/conceal/results/10.129.228.122/scans/_full_tcp_nmap.txt" -oX "/home/dotwut/Labs/conceal/results/10.129.228.122/scans/xml/_full_tcp_nmap.xml" 10.129.228.122
+
+nmap -vv --reason -Pn -T4 -sV -sC --version-all -A --osscan-guess -oN "/home/dotwut/Labs/conceal/results/10.129.228.122/scans/_quick_tcp_nmap.txt" -oX "/home/dotwut/Labs/conceal/results/10.129.228.122/scans/xml/_quick_tcp_nmap.xml" 10.129.228.122
+
+nmap -vv --reason -Pn -T4 -sV -sC --version-all -A --osscan-guess -p- -oN "/home/dotwut/Labs/conceal/results/10.129.228.122/scans/_full_tcp_nmap.txt" -oX "/home/dotwut/Labs/conceal/results/10.129.228.122/scans/xml/_full_tcp_nmap.xml" 10.129.228.122
+

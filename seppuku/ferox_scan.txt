@@ -1,0 +1,31 @@
+200      GET      224l     1644w    99426c http://192.168.204.90:7601/Seppuku.jpg
+200      GET        8l       15w      171c http://192.168.204.90:7601/
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://192.168.204.90:7601/a/ (Apache)
+200      GET       15l       49w      735c http://192.168.204.90:7601/a/
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://192.168.204.90:7601/b/ (Apache)
+200      GET       15l       49w      735c http://192.168.204.90:7601/b/
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://192.168.204.90:7601/c/ (Apache)
+200      GET       15l       49w      735c http://192.168.204.90:7601/c/
+200      GET      130l      571w     7244c http://192.168.204.90:7601/ckeditor/index.html
+200      GET       26l      123w    10263c http://192.168.204.90:7601/ckeditor/img/logo.png
+200      GET       36l       75w      851c http://192.168.204.90:7601/ckeditor/toolbarconfigurator/lib/codemirror/neo.css
+200      GET      447l     1423w    15822c http://192.168.204.90:7601/ckeditor/toolbarconfigurator/index.html
+200      GET     1637l     3901w    67342c http://192.168.204.90:7601/ckeditor/css/samples.css
+200      GET       13l      590w    10887c http://192.168.204.90:7601/ckeditor/img/logo.svg
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://192.168.204.90:7601/d/ (Apache)
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://192.168.204.90:7601/database/ (Apache)
+200      GET       53l      200w     1596c http://192.168.204.90:7601/ckeditor/js/sample.js
+200      GET      130l      571w     7244c http://192.168.204.90:7601/ckeditor/
+200      GET       15l       49w      735c http://192.168.204.90:7601/d/
+200      GET       15l       49w      749c http://192.168.204.90:7601/database/
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://192.168.204.90:7601/e/ (Apache)
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://192.168.204.90:7601/f/ (Apache)
+200      GET       15l       49w      735c http://192.168.204.90:7601/f/
+200      GET       15l       49w      735c http://192.168.204.90:7601/e/
+200      GET       15l       49w      776c http://192.168.204.90:7601/ckeditor/ckeditor/
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://192.168.204.90:7601/h/ (Apache)
+200      GET       15l       49w      735c http://192.168.204.90:7601/h/
+200      GET       10l       43w      338c http://192.168.204.90:7601/ckeditor/config.js
+200      GET        8l       15w      171c http://192.168.204.90:7601/index.html
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://192.168.204.90:7601/keys/ (Apache)
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://192.168.204.90:7601/q/ (Apache)

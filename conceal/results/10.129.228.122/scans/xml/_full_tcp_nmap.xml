@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Thu May 11 14:30:57 2023 as: nmap -vv -&#45;reason -Pn -T4 -sV -sC -&#45;version-all -A -&#45;osscan-guess -p- -oN /home/dotwut/Labs/conceal/results/10.129.228.122/scans/_full_tcp_nmap.txt -oX /home/dotwut/Labs/conceal/results/10.129.228.122/scans/xml/_full_tcp_nmap.xml 10.129.228.122 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -T4 -sV -sC -&#45;version-all -A -&#45;osscan-guess -p- -oN /home/dotwut/Labs/conceal/results/10.129.228.122/scans/_full_tcp_nmap.txt -oX /home/dotwut/Labs/conceal/results/10.129.228.122/scans/xml/_full_tcp_nmap.xml 10.129.228.122" start="1683837057" startstr="Thu May 11 14:30:57 2023" version="7.93" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1683837057"/>
+<taskend task="NSE" time="1683837057"/>
+<taskbegin task="NSE" time="1683837057"/>
+<taskend task="NSE" time="1683837057"/>
+<taskbegin task="NSE" time="1683837057"/>
+<taskend task="NSE" time="1683837057"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1683837057"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1683837057"/>
+<taskbegin task="Connect Scan" time="1683837057"/>
+<taskprogress task="Connect Scan" time="1683837088" percent="0.47"/>
+<taskprogress task="Connect Scan" time="1683837118" percent="0.92"/>
+<taskprogress task="Connect Scan" time="1683837148" percent="1.38" remaining="6499" etc="1683843647"/>
+<taskprogress task="Connect Scan" time="1683837460" percent="6.13" remaining="6167" etc="1683843627"/>
