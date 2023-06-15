@@ -1,0 +1,4 @@
+# Nmap 7.93 scan initiated Thu May 11 15:02:47 2023 as: nmap -Pn -sC -sV -n -p21,80,135,139,445 -oN conceal.htb conceal.htb
+Failed to resolve "conceal.htb".
+WARNING: No targets were specified, so 0 hosts scanned.
+# Nmap done at Thu May 11 15:02:47 2023 -- 0 IP addresses (0 hosts up) scanned in 0.23 seconds

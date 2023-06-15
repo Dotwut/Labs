@@ -1,0 +1,5 @@
+200      GET        4l       25w      177c http://192.168.187.87/
+200      GET        4l       25w      177c http://192.168.187.87/index
+200      GET        4l       25w      177c http://192.168.187.87/index.html
+500      GET       17l       79w      619c http://192.168.187.87/cgi-bin/local.txt
+200      GET        1l        3w       14c http://192.168.187.87/cgi-bin/test

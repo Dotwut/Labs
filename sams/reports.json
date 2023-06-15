@@ -1,0 +1,12 @@
+{
+    "last_updated": "2023-06-01 09:38:05.691565",
+    "results": [
+        {
+            "http://192.168.164.248/testing/install/index.php/": {
+                "cms_id": "",
+                "date": "2023-06-01 09:37:52.715520",
+                "report": "/home/dotwut/Labs/sams/Result/192.168.164.248_testing_install_index.php/cms.json"
+            }
+        }
+    ]
+}

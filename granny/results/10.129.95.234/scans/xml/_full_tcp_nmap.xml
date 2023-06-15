@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Thu May  4 11:37:59 2023 as: nmap -vv -&#45;reason -Pn -T4 -sV -sC -&#45;version-all -A -&#45;osscan-guess -p- -oN /home/dotwut/Labs/granny/results/10.129.95.234/scans/_full_tcp_nmap.txt -oX /home/dotwut/Labs/granny/results/10.129.95.234/scans/xml/_full_tcp_nmap.xml 10.129.95.234 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -T4 -sV -sC -&#45;version-all -A -&#45;osscan-guess -p- -oN /home/dotwut/Labs/granny/results/10.129.95.234/scans/_full_tcp_nmap.txt -oX /home/dotwut/Labs/granny/results/10.129.95.234/scans/xml/_full_tcp_nmap.xml 10.129.95.234" start="1683221879" startstr="Thu May  4 11:37:59 2023" version="7.93" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1683221879"/>
+<taskend task="NSE" time="1683221879"/>
+<taskbegin task="NSE" time="1683221879"/>
+<taskend task="NSE" time="1683221879"/>
+<taskbegin task="NSE" time="1683221879"/>
+<taskend task="NSE" time="1683221879"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1683221879"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1683221879"/>
+<taskbegin task="Connect Scan" time="1683221879"/>
+<taskprogress task="Connect Scan" time="1683221910" percent="21.29" remaining="115" etc="1683222025"/>
+<taskprogress task="Connect Scan" time="1683221940" percent="57.16" remaining="46" etc="1683221986"/>
+<taskend task="Connect Scan" time="1683221968" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1683221968"/>
+<taskend task="Service scan" time="1683221975" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1683221975"/>
+<taskend task="NSE" time="1683221980"/>
+<taskbegin task="NSE" time="1683221980"/>
+<taskend task="NSE" time="1683221980"/>
+<taskbegin task="NSE" time="1683221980"/>
+<taskend task="NSE" time="1683221980"/>
+<host starttime="1683221879" endtime="1683221980"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.129.95.234" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65534">
+<extrareasons reason="no-response" count="65534" proto="tcp" ports="1-79,81-65535"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Microsoft IIS httpd" version="6.0" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:internet_information_services:6.0</cpe><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-server-header" output="Microsoft-IIS/6.0"><elem>Microsoft-IIS/6.0</elem>
+</script><script id="http-webdav-scan" output="&#xa;  Allowed Methods: OPTIONS, TRACE, GET, HEAD, DELETE, COPY, MOVE, PROPFIND, PROPPATCH, SEARCH, MKCOL, LOCK, UNLOCK&#xa;  WebDAV type: Unknown&#xa;  Public Options: OPTIONS, TRACE, GET, HEAD, DELETE, PUT, POST, COPY, MOVE, MKCOL, PROPFIND, PROPPATCH, LOCK, UNLOCK, SEARCH&#xa;  Server Type: Microsoft-IIS/6.0&#xa;  Server Date: Thu, 04 May 2023 17:39:35 GMT"><elem key="Allowed Methods">OPTIONS, TRACE, GET, HEAD, DELETE, COPY, MOVE, PROPFIND, PROPPATCH, SEARCH, MKCOL, LOCK, UNLOCK</elem>
+<elem key="WebDAV type">Unknown</elem>
+<elem key="Public Options">OPTIONS, TRACE, GET, HEAD, DELETE, PUT, POST, COPY, MOVE, MKCOL, PROPFIND, PROPPATCH, LOCK, UNLOCK, SEARCH</elem>
+<elem key="Server Type">Microsoft-IIS/6.0</elem>
+<elem key="Server Date">Thu, 04 May 2023 17:39:35 GMT</elem>
+</script><script id="http-title" output="Under Construction"><elem key="title">Under Construction</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: OPTIONS TRACE GET HEAD DELETE COPY MOVE PROPFIND PROPPATCH SEARCH MKCOL LOCK UNLOCK PUT POST&#xa;  Potentially risky methods: TRACE DELETE COPY MOVE PROPFIND PROPPATCH SEARCH MKCOL LOCK UNLOCK PUT"><table key="Supported Methods">
+<elem>OPTIONS</elem>
+<elem>TRACE</elem>
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>DELETE</elem>
+<elem>COPY</elem>
+<elem>MOVE</elem>
+<elem>PROPFIND</elem>
+<elem>PROPPATCH</elem>
+<elem>SEARCH</elem>
+<elem>MKCOL</elem>
+<elem>LOCK</elem>
+<elem>UNLOCK</elem>
+<elem>PUT</elem>
+<elem>POST</elem>
+</table>
+<table key="Potentially risky methods">
+<elem>TRACE</elem>
+<elem>DELETE</elem>
+<elem>COPY</elem>
+<elem>MOVE</elem>
+<elem>PROPFIND</elem>
+<elem>PROPPATCH</elem>
+<elem>SEARCH</elem>
+<elem>MKCOL</elem>
+<elem>LOCK</elem>
+<elem>UNLOCK</elem>
+<elem>PUT</elem>
+</table>
+</script></port>
+</ports>
+<times srtt="71365" rttvar="5914" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1683221980"/>
+<taskend task="NSE" time="1683221980"/>
+<taskbegin task="NSE" time="1683221980"/>
+<taskend task="NSE" time="1683221980"/>
+<taskbegin task="NSE" time="1683221980"/>
+<taskend task="NSE" time="1683221980"/>
+<runstats><finished time="1683221980" timestr="Thu May  4 11:39:40 2023" summary="Nmap done at Thu May  4 11:39:40 2023; 1 IP address (1 host up) scanned in 101.42 seconds" elapsed="101.42" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

@@ -1,0 +1,22 @@
+Matched Pattern: Powered-By: ASP.NET
+
+CVE Identified: CVE-2000-0709
+
+Nmap script found a potential vulnerability. (State: VULNERABLE)
+
+WebDAV is enabled
+
+Identified HTTP Server: Microsoft-IIS/6.0
+
+Identified HTTP Server: 5.0_Pub
+
+CVE Identified: CVE-2000-0709
+
+CVE Identified: CVE-1999-1376
+
+CVE Identified: CVE-2000-0114
+
+Matched Pattern: unauthorized
+
+Matched Pattern: Unauthorized
+

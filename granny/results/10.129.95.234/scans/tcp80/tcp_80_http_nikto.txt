@@ -1,0 +1,44 @@
+- Nikto v2.5.0
+---------------------------------------------------------------------------
++ Target IP:          10.129.95.234
++ Target Hostname:    10.129.95.234
++ Target Port:        80
++ Start Time:         2023-05-04 11:38:22 (GMT-6)
+---------------------------------------------------------------------------
++ Server: Microsoft-IIS/6.0
++ /: Retrieved microsoftofficewebserver header: 5.0_Pub.
++ /: Retrieved x-powered-by header: ASP.NET.
++ /: The anti-clickjacking X-Frame-Options header is not present. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options
++ /: Uncommon header 'microsoftofficewebserver' found, with contents: 5.0_Pub.
++ /: The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type. See: https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/
++ /zqimUlyp.aspx: Retrieved x-aspnet-version header: 1.1.4322.
++ No CGI Directories found (use '-C all' to force check all possible dirs)
++ /nikto-test-EYGGGH3l.html: HTTP method 'PUT' allows clients to save files on the web server. See: https://portswigger.net/kb/issues/00100900_http-put-method-is-enabled
++ /nikto-test-EYGGGH3l.html: HTTP method 'DELETE' allows clients to delete files on the web server. See: https://cwe.mitre.org/data/definitions/650.html
++ OPTIONS: Allowed HTTP Methods: OPTIONS, TRACE, GET, HEAD, DELETE, PUT, POST, COPY, MOVE, MKCOL, PROPFIND, PROPPATCH, LOCK, UNLOCK, SEARCH .
++ HTTP method ('Allow' Header): 'DELETE' may allow clients to remove files on the web server.
++ HTTP method ('Allow' Header): 'PUT' method could allow clients to save files on the web server.
++ HTTP method ('Allow' Header): 'MOVE' may allow clients to change file locations on the web server.
++ OPTIONS: Public HTTP Methods: OPTIONS, TRACE, GET, HEAD, DELETE, PUT, POST, COPY, MOVE, MKCOL, PROPFIND, PROPPATCH, LOCK, UNLOCK, SEARCH .
++ HTTP method ('Public' Header): 'DELETE' may allow clients to remove files on the web server.
++ HTTP method ('Public' Header): 'PUT' method could allow clients to save files on the web server.
++ HTTP method ('Public' Header): 'MOVE' may allow clients to change file locations on the web server.
++ OPTIONS: WebDAV enabled (PROPPATCH UNLOCK PROPFIND MKCOL COPY SEARCH LOCK listed as allowed).
++ /: PROPFIND HTTP verb may show the server's internal IP address: http://granny/_vti_bin/_vti_aut/author.dll. See: https://docs.microsoft.com/en-us/previous-versions/office/developer/exchange-server-2003/aa142960(v%3Dexchg.65)
++ /_vti_bin/shtml.exe: Attackers may be able to crash FrontPage by requesting a DOS device, like shtml.exe/aux.htm -- a DoS was not attempted. See: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2000-0709
++ /postinfo.html: Microsoft FrontPage default file found. See: CWE-552
++ /_vti_bin/shtml.exe/_vti_rpc: FrontPage may be installed. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage
++ /_private/: FrontPage directory found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage
++ /_vti_bin/: FrontPage directory found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage
++ /_vti_inf.html: FrontPage/SharePoint is installed and reveals its version number (check HTML source for more information). See: https://en.wikipedia.org/wiki/Microsoft_FrontPage
++ /_vti_bin/: shtml.exe/shtml.dll is available remotely. Some versions of the Front Page ISAPI filter are vulnerable to a DOS (not attempted). See: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2000-0709
++ /_vti_bin/fpcount.exe: Frontpage counter CGI has been found. FP Server version 97 allows remote users to execute arbitrary system commands, though a vulnerability in this version could not be confirmed. See: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-1999-1376
++ /_vti_bin/shtml.dll/_vti_rpc: The anonymous FrontPage user is revealed through a crafted POST. See: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2000-0114
++ /_vti_bin/_vti_adm/admin.dll: FrontPage/SharePoint file found.
++ /_vti_bin/_vti_adm/admin.exe: FrontPage/Sharepointfile available.
++ /_vti_bin/_vti_aut/author.exe: FrontPage/Sharepointfile available.
++ /_vti_bin/_vti_aut/author.dll: FrontPage/Sharepointfile available.
++ 7732 requests: 0 error(s) and 31 item(s) reported on remote host
++ End Time:           2023-05-04 11:47:38 (GMT-6) (556 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested

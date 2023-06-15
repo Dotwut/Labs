@@ -1,0 +1,12 @@
+200      GET       83l      462w     4243c http://192.168.158.76/generic.html
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://192.168.158.76/assets/ (Apache)
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://192.168.158.76/images/ (Apache)
+200      GET        1l       55w     2285c http://192.168.158.76:8000/app/site/themes/common/js/html5shiv.js
+403      GET        9l       28w      281c http://192.168.158.76:8000/app/site/themes/common/js/.html5shiv.js.swp
+200      GET        3l      453w    22017c http://192.168.158.76:8000/settings.css.lens
+200      GET        3l     1098w    88908c http://192.168.158.76:8000/koken.js
+200      GET        1l        6w     1863c http://192.168.158.76:8000/app/site/themes/common/css/kicons.css
+200      GET       10l       34w      719c http://192.168.158.76:8000/feed/timeline/recent.rss
+200      GET       10l       33w      708c http://192.168.158.76:8000/feed/content/recent.rss
+200      GET        1l       10w     1267c http://192.168.158.76:8000/app/site/themes/common/js/share.js
+200      GET        1l       33w     1334c http://192.168.158.76:8000/storage/themes/elementary/css/kshare.css
