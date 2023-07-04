@@ -1,0 +1,4 @@
+200      GET       89l      341w     2689c http://10.10.165.235/css/style.css
+200      GET       34l       60w      848c http://10.10.165.235/login.php
+200      GET       89l      341w     2689c http://10.10.165.235/css/style.css
+200      GET       34l       60w      848c http://10.10.165.235/login.php

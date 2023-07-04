@@ -1,0 +1,12 @@
+200      GET       38l      129w     1163c http://10.10.225.195/index.html
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://10.10.225.195/pricing/ (Apache)
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://10.10.225.195/gallery/ (Apache)
+200      GET       32l       61w      924c http://10.10.225.195/pricing/pricing.html
+200      GET       52l      106w      945c http://10.10.225.195/styles.css
+200      GET      140l      394w     3940c http://10.10.225.195/gallery/gallery.html
+200      GET       38l      129w     1163c http://10.10.225.195/
+200      GET        3l       10w       57c http://10.10.225.195/pricing/note.txt
+200      GET       16l       58w      946c http://10.10.225.195/gallery/
+200      GET       17l       70w     1140c http://10.10.225.195/pricing/
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://10.10.225.195/static/ (Apache)
+200      GET       14l       40w      567c http://10.10.225.195/static/

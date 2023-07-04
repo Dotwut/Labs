@@ -1,0 +1,98 @@
+# Nmap 7.94 scan initiated Sun Jun 18 10:56:04 2023 as: nmap -vvv -p 21,22,53,80,139,666,3306,12380 -oN TCPscan.txt -A -sC -Pn -T4 192.168.168.148
+Nmap scan report for 192.168.168.148
+Host is up, received user-set (0.070s latency).
+Scanned at 2023-06-18 10:56:04 MDT for 44s
+
+PORT      STATE SERVICE    REASON  VERSION
+21/tcp    open  ftp        syn-ack vsftpd 2.0.8 or later
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+|_Can't get directory listing: PASV failed: 550 Permission denied.
+| ftp-syst: 
+|   STAT: 
+| FTP server status:
+|      Connected to 192.168.45.227
+|      Logged in as ftp
+|      TYPE: ASCII
+|      No session bandwidth limit
+|      Session timeout in seconds is 300
+|      Control connection is plain text
+|      Data connections will be plain text
+|      At session startup, client count was 1
+|      vsFTPd 3.0.3 - secure, fast, stable
+|_End of status
+22/tcp    open  ssh        syn-ack OpenSSH 7.2p2 Ubuntu 4 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 81:21:ce:a1:1a:05:b1:69:4f:4d:ed:80:28:e8:99:05 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDc/xrBbi5hixT2B19dQilbbrCaRllRyNhtJcOzE8x0BM1ow9I80RcU7DtajyqiXXEwHRavQdO+/cHZMyOiMFZG59OCuIouLRNoVO58C91gzDgDZ1fKH6BDg+FaSz+iYZbHg2lzaMPbRje6oqNamPR4QGISNUpxZeAsQTLIiPcRlb5agwurovTd3p0SXe0GknFhZwHHvAZWa2J6lHE2b9K5IsSsDzX2WHQ4vPb+1DzDHV0RTRVUGviFvUX1X5tVFvVZy0TTFc0minD75CYClxLrgc+wFLPcAmE2C030ER/Z+9umbhuhCnLkLN87hlzDSRDPwUjWr+sNA3+7vc/xuZul
+|   256 5b:a5:bb:67:91:1a:51:c2:d3:21:da:c0:ca:f0:db:9e (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBNQB5n5kAZPIyHb9lVx1aU0fyOXMPUblpmB8DRjnP8tVIafLIWh54wmTFVd3nCMr1n5IRWiFeX1weTBDSjjz0IY=
+|   256 6d:01:b7:73:ac:b0:93:6f:fa:b9:89:e6:ae:3c:ab:d3 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJ9wvrF4tkFMApswOmWKpTymFjkaiIoie4QD0RWOYnny
+53/tcp    open  tcpwrapped syn-ack
+80/tcp    open  http       syn-ack PHP cli server 5.5 or later
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-title: 404 Not Found
+139/tcp   open  àNŽpUU     syn-ack Samba smbd 4.3.9-Ubuntu (workgroup: WORKGROUP)
+666/tcp   open  tcpwrapped syn-ack
+3306/tcp  open  mysql      syn-ack MySQL 5.7.12-0ubuntu1
+| mysql-info: 
+|   Protocol: 10
+|   Version: 5.7.12-0ubuntu1
+|   Thread ID: 23
+|   Capabilities flags: 63487
+|   Some Capabilities: LongPassword, ODBCClient, Speaks41ProtocolNew, IgnoreSpaceBeforeParenthesis, Speaks41ProtocolOld, SupportsTransactions, SupportsLoadDataLocal, IgnoreSigpipes, SupportsCompression, InteractiveClient, FoundRows, Support41Auth, LongColumnFlag, DontAllowDatabaseTableColumn, ConnectWithDatabase, SupportsMultipleStatments, SupportsMultipleResults, SupportsAuthPlugins
+|   Status: Autocommit
+|   Salt: \x1Ar!%\x1Dh\x0Cx58\x1B\x06I8\x085>	Y6
+|_  Auth Plugin Name: mysql_native_password
+12380/tcp open  http       syn-ack Apache httpd 2.4.18 ((Ubuntu))
+|_http-title: Tim, we need to-do better next year for Initech
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+Service Info: Host: RED; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Host script results:
+|_clock-skew: mean: -20m00s, deviation: 34m38s, median: 0s
+| smb2-time: 
+|   date: 2023-06-18T16:56:16
+|_  start_date: N/A
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 54023/tcp): CLEAN (Timeout)
+|   Check 2 (port 15116/tcp): CLEAN (Timeout)
+|   Check 3 (port 32653/udp): CLEAN (Failed to receive data)
+|   Check 4 (port 27165/udp): CLEAN (Failed to receive data)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+| nbstat: NetBIOS name: RED, NetBIOS user: <unknown>, NetBIOS MAC: <unknown> (unknown)
+| Names:
+|   RED<00>              Flags: <unique><active>
+|   RED<03>              Flags: <unique><active>
+|   RED<20>              Flags: <unique><active>
+|   \x01\x02__MSBROWSE__\x02<01>  Flags: <group><active>
+|   WORKGROUP<00>        Flags: <group><active>
+|   WORKGROUP<1d>        Flags: <unique><active>
+|   WORKGROUP<1e>        Flags: <group><active>
+| Statistics:
+|   00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00
+|   00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00
+|_  00:00:00:00:00:00:00:00:00:00:00:00:00:00
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb2-security-mode: 
+|   3:1:1: 
+|_    Message signing enabled but not required
+| smb-os-discovery: 
+|   OS: Windows 6.1 (Samba 4.3.9-Ubuntu)
+|   Computer name: red
+|   NetBIOS computer name: RED\x00
+|   Domain name: \x00
+|   FQDN: red
+|_  System time: 2023-06-18T17:56:16+01:00
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Jun 18 10:56:48 2023 -- 1 IP address (1 host up) scanned in 44.23 seconds
