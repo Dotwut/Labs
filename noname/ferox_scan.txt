@@ -1,0 +1,13 @@
+200      GET        7l       17w      201c http://192.168.182.15/
+200      GET       54l      197w    19052c http://192.168.182.15/haclabs.jpeg
+200      GET        0l        0w  3919716c http://192.168.182.15/new.jpg
+200      GET        0l        0w  1019381c http://192.168.182.15/Short.png
+200      GET        0l        0w  1303340c http://192.168.182.15/ctf-01.jpg
+200      GET       60l       30w      417c http://192.168.182.15/admin
+200      GET        7l       17w      201c http://192.168.182.15/index.php
+200      GET       54l      197w    19052c http://192.168.182.15/haclabs.jpeg
+200      GET        0l        0w  1019381c http://192.168.182.15/Short.png
+200      GET        0l        0w  1303340c http://192.168.182.15/ctf-01.jpg
+200      GET        0l        0w  3919716c http://192.168.182.15/new.jpg
+200      GET       60l       30w      417c http://192.168.182.15/admin
+403      GET        9l       28w      279c http://192.168.182.15/.php

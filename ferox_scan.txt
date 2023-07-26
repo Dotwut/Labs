@@ -73,3 +73,11 @@
 200      GET       16l       59w      968c http://192.168.158.211/election/lib/
 200      GET       20l      102w     1755c http://192.168.158.211/election/media/
 200      GET       16l       60w      965c http://192.168.158.211/election/themes/
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://192.168.212.95/nothing/ (Apache)
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://192.168.212.95/hidden_text/ (Apache)
+200      GET       22l       21w      211c http://192.168.212.95/hidden_text/secret.dic
+200      GET       16l       27w      194c http://192.168.212.95/nothing/nothing.html
+200      GET       75l      191w     3065c http://192.168.212.95/
+200      GET       75l      191w     3065c http://192.168.212.95/index.html
+200      GET        5l        9w       61c http://192.168.212.95/robots.txt
+200      GET       16l       60w      954c http://192.168.212.95/hidden_text/

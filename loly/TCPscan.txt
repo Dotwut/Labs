@@ -1,0 +1,16 @@
+# Nmap 7.94 scan initiated Tue Jul 25 21:49:08 2023 as: nmap -vvv -p 80 -oN TCPscan.txt -A -sC -Pn -T4 192.168.221.121
+Nmap scan report for 192.168.221.121
+Host is up, received user-set (0.13s latency).
+Scanned at 2023-07-25 21:49:08 MDT for 8s
+
+PORT   STATE SERVICE REASON  VERSION
+80/tcp open  http    syn-ack nginx 1.10.3 (Ubuntu)
+|_http-title: Welcome to nginx!
+|_http-server-header: nginx/1.10.3 (Ubuntu)
+| http-methods: 
+|_  Supported Methods: GET HEAD
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Jul 25 21:49:16 2023 -- 1 IP address (1 host up) scanned in 8.71 seconds

@@ -1,0 +1,119 @@
+200      GET     1159l     2347w    25252c http://192.168.173.94/css/elegant-icons.css
+200      GET       10l       99w     5467c http://192.168.173.94/img/icons/chose-icon-4.png
+200      GET      135l      235w     3836c http://192.168.173.94/js/main.js
+200      GET        4l       66w    31000c http://192.168.173.94/css/font-awesome.min.css
+200      GET        9l      394w    24103c http://192.168.173.94/js/masonry.pkgd.min.js
+200      GET       10l       81w     3885c http://192.168.173.94/img/logo.png
+200      GET      156l      878w    55147c http://192.168.173.94/img/feature/feature-1.jpg
+200      GET      121l      758w    55640c http://192.168.173.94/img/classes/class-1.jpg
+200      GET       12l      100w     5922c http://192.168.173.94/img/icons/chose-icon-1.png
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://192.168.173.94/img/ (Apache)
+200      GET      228l     1258w    92455c http://192.168.173.94/img/classes/class-2.jpg
+200      GET      762l     2080w    36592c http://192.168.173.94/index.php
+200      GET       26l      227w    18662c http://192.168.173.94/img/author-pic.png
+200      GET       55l      380w    30356c http://192.168.173.94/img/recent-2.jpg
+200      GET       87l      688w    49909c http://192.168.173.94/img/home-about.jpg
+200      GET       20l      115w     7791c http://192.168.173.94/img/br-recent-2.jpg
+200      GET       56l      476w    40236c http://192.168.173.94/img/classes-title-bg.jpg
+200      GET      128l      553w    43965c http://192.168.173.94/img/blog-single-3.jpg
+200      GET      192l      986w    90323c http://192.168.173.94/img/feature/feature-3.jpg
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://192.168.173.94/img/blog/ (Apache)
+200      GET      571l     3767w   274969c http://192.168.173.94/img/about-us.jpg
+200      GET      266l     1480w   119385c http://192.168.173.94/img/blog/blog-4.jpg
+200      GET        7l      277w    44342c http://192.168.173.94/js/owl.carousel.min.js
+200      GET      616l     3341w   279958c http://192.168.173.94/img/blog-single-hero.jpg
+200      GET      156l      661w    50994c http://192.168.173.94/img/blog-single-4.jpg
+200      GET      173l      914w    78875c http://192.168.173.94/img/blog/blog-2.jpg
+200      GET      395l     2248w   178333c http://192.168.173.94/img/blog/blog-3.jpg
+200      GET      138l      845w    69379c http://192.168.173.94/img/blog/blog-page-2.jpg
+200      GET      145l      878w    73312c http://192.168.173.94/img/blog/blog-page-1.jpg
+200      GET      115l      701w    54465c http://192.168.173.94/img/blog/blog-5.jpg
+200      GET       11l      108w     7399c http://192.168.173.94/img/icons/chose-icon-2.png
+200      GET        4l       42w     2942c http://192.168.173.94/js/jquery.nice-select.min.js
+200      GET        6l       77w     3351c http://192.168.173.94/css/owl.carousel.min.css
+200      GET        5l       79w     2505c http://192.168.173.94/css/slicknav.min.css
+200      GET       13l       85w     4484c http://192.168.173.94/img/icons/chose-icon-5.png
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://192.168.173.94/img/classes/ (Apache)
+200      GET      584l     1619w    20977c http://192.168.173.94/js/jquery.slicknav.js
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://192.168.173.94/js/ (Apache)
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://192.168.173.94/img/feature/ (Apache)
+200      GET        4l      212w    20216c http://192.168.173.94/js/jquery.magnific-popup.min.js
+200      GET        2l     1283w    86927c http://192.168.173.94/js/jquery-3.3.1.min.js
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://192.168.173.94/img/icons/ (Apache)
+200      GET      114l      787w    59222c http://192.168.173.94/img/classes/class-4.jpg
+200      GET       17l      115w     6540c http://192.168.173.94/img/icons/chose-icon-6.png
+200      GET      119l      743w    37698c http://192.168.173.94/img/feature/feature-2.jpg
+200      GET       15l       94w     4903c http://192.168.173.94/img/icons/chose-icon-3.png
+200      GET       18l      930w    89031c http://192.168.173.94/js/mixitup.min.js
+200      GET      177l      863w    75815c http://192.168.173.94/img/classes/class-3.jpg
+200      GET      351l      795w     6951c http://192.168.173.94/css/magnific-popup.css
+200      GET     3120l     6202w    56428c http://192.168.173.94/css/style.css
+200      GET      944l     6848w   533961c http://192.168.173.94/img/hero-slider/hero-3.jpg
+200      GET      138l      371w     4007c http://192.168.173.94/css/nice-select.css
+200      GET        7l      683w    60010c http://192.168.173.94/js/bootstrap.min.js
+200      GET       10l       88w     5292c http://192.168.173.94/img/br-recent-1.jpg
+200      GET       18l      111w     6729c http://192.168.173.94/img/br-recent-3.jpg
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://192.168.173.94/css/ (Apache)
+200      GET       14l      114w     6449c http://192.168.173.94/img/br-recent-4.jpg
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://192.168.173.94/img/gallery/ (Apache)
+200      GET       45l      281w    18995c http://192.168.173.94/img/recent-3.jpg
+200      GET      205l     1266w   100542c http://192.168.173.94/img/blog/blog-1.jpg
+200      GET       32l      203w    14029c http://192.168.173.94/img/sidebar-latest.jpg
+200      GET      139l      735w    58929c http://192.168.173.94/img/recent-1.jpg
+200      GET      203l      885w    69021c http://192.168.173.94/img/blog-single-2.jpg
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://192.168.173.94/img/hero-slider/ (Apache)
+200      GET       87l      454w    35290c http://192.168.173.94/img/gallery/gallery-9.jpg
+200      GET      965l     7450w   548320c http://192.168.173.94/img/price-bg.jpg
+200      GET        7l     2122w   159515c http://192.168.173.94/css/bootstrap.min.css
+200      GET        0l        0w   157353c http://192.168.173.94/img/hero-slider/hero-1.jpg
+200      GET        0l        0w   220504c http://192.168.173.94/img/hero-slider/hero-2.jpg
+200      GET        0l        0w   151929c http://192.168.173.94/img/video-bg.jpg
+200      GET      227l     1054w    80663c http://192.168.173.94/img/blog-single-1.jpg
+200      GET      762l     2080w    36592c http://192.168.173.94/
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://192.168.173.94/img/trainer/ (Apache)
+200      GET        0l        0w   153386c http://192.168.173.94/img/testimonial-bg.jpg
+200      GET        0l        0w    89869c http://192.168.173.94/img/about-bread.jpg
+200      GET      150l      944w    67841c http://192.168.173.94/img/blog/blog-page-3.jpg
+200      GET      178l     1229w    76547c http://192.168.173.94/img/gallery/gallery-3.jpg
+200      GET       88l      601w    51959c http://192.168.173.94/img/trainer/trainer-2.jpg
+200      GET      178l     1053w    76045c http://192.168.173.94/img/blog/blog-page-5.jpg
+200      GET      117l      632w    56055c http://192.168.173.94/img/blog/blog-page-4.jpg
+200      GET      191l     1224w    89330c http://192.168.173.94/img/gallery/gallery-6.jpg
+200      GET      111l      600w    51347c http://192.168.173.94/img/trainer/trainer-3.jpg
+200      GET      269l     1230w   107471c http://192.168.173.94/img/gallery/gallery-1.jpg
+200      GET      124l      702w    59766c http://192.168.173.94/img/trainer/trainer-1.jpg
+200      GET      146l     1297w    97600c http://192.168.173.94/img/gallery/gallery-5.jpg
+200      GET       99l      636w    53063c http://192.168.173.94/img/trainer/trainer-4.jpg
+200      GET      277l     1484w   116802c http://192.168.173.94/img/gallery/gallery-4.jpg
+200      GET      217l     1222w    88580c http://192.168.173.94/img/gallery/gallery-7.jpg
+200      GET      170l     1288w    90147c http://192.168.173.94/img/gallery/gallery-8.jpg
+200      GET      321l     1718w   126150c http://192.168.173.94/img/gallery/gallery-2.jpg
+200      GET      409l     1251w    20735c http://192.168.173.94/about.php
+200      GET      315l      867w    15274c http://192.168.173.94/blog.php
+200      GET      251l      637w    11556c http://192.168.173.94/contact.php
+200      GET       23l      124w     2425c http://192.168.173.94/css/
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://192.168.173.94/fonts/ (Apache)
+200      GET      241l     1445w   115487c http://192.168.173.94/fonts/ElegantIcons.woff
+200      GET      392l     2209w   177523c http://192.168.173.94/fonts/fontawesome-webfont.woff
+200      GET      426l     4580w    69993c http://192.168.173.94/fonts/ElegantIcons.ttf
+200      GET     2574l     4782w   258854c http://192.168.173.94/fonts/FontAwesome.otf
+200      GET     1452l     5979w   212524c http://192.168.173.94/fonts/fontawesome-webfont.eot
+200      GET     1452l     5977w   212322c http://192.168.173.94/fonts/fontawesome-webfont.ttf
+200      GET      426l     4581w    70191c http://192.168.173.94/fonts/ElegantIcons.eot
+200      GET      288l     1759w   139600c http://192.168.173.94/fonts/fontawesome-webfont.woff2
+200      GET     1832l    22601w   277297c http://192.168.173.94/fonts/ElegantIcons.svg
+200      GET     2671l    62869w   444379c http://192.168.173.94/fonts/fontawesome-webfont.svg
+200      GET       25l      152w     2951c http://192.168.173.94/fonts/
+200      GET      342l      919w    17070c http://192.168.173.94/gallery.php
+200      GET       44l      335w     6721c http://192.168.173.94/img/
+200      GET       24l      146w     2694c http://192.168.173.94/js/
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://192.168.173.94/pages/ (Apache)
+200      GET      251l      637w    11556c http://192.168.173.94/pages/contact.php
+200      GET      411l     1374w    22301c http://192.168.173.94/pages/blog-single.php
+200      GET      409l     1251w    20735c http://192.168.173.94/pages/about.php
+200      GET      485l     1298w    23805c http://192.168.173.94/pages/schedule.php
+200      GET      342l      919w    17070c http://192.168.173.94/pages/gallery.php
+200      GET      315l      867w    15274c http://192.168.173.94/pages/blog.php
+200      GET       21l      115w     1959c http://192.168.173.94/pages/
+200      GET      485l     1298w    23805c http://192.168.173.94/schedule.php
+200      GET      411l     1374w    22301c http://192.168.173.94/blog-single.php

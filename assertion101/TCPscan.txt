@@ -1,0 +1,24 @@
+# Nmap 7.94 scan initiated Wed Jul 26 12:57:15 2023 as: nmap -vvv -p 22,80 -oN TCPscan.txt -A -sC -Pn -T4 192.168.173.94
+Nmap scan report for 192.168.173.94
+Host is up, received user-set (0.093s latency).
+Scanned at 2023-07-26 12:57:15 MDT for 10s
+
+PORT   STATE SERVICE REASON  VERSION
+22/tcp open  ssh     syn-ack OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 6e:ce:aa:cc:02:de:a5:a3:58:5d:da:2b:ef:54:07:f9 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDNS1bpG+RuEzPxn7QEKzivaD+uVesY6o/DaBwuar89+dBs/2qL9S4WkHXV1jE3tXCsvF22c3knEt4ZJOyzBo7x/o4nxb4tXeDJ5l+sAlFXoOnOXzBcxpNm74vAV7ZWATaH969LXQh9/cdAGvQ3X9DiaDLgPIX1JgINkNQtXvR+U61fr8/sQ/4gFgH2M7bHkC3gVm5z4orxgAKDUDPwChB+8lIKMKl0ip32c2xLAh65zMyQghr42pjW5H6YhxxAHzcmOajI/2cdR3PrrC94IDt4kLtXAV0e6orq1xsPCUmUMCqNH5Y7z8P2SySy9hNfisb0WHFmI8yFEstOTBvEB0Xr
+|   256 9d:3f:df:16:7a:e1:59:58:84:4a:e3:29:8f:44:87:8d (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBJi0flXZ+95KqDwqNepK1txoO9GveKYZ1AD6kx3Ent/H8EsWuqzn1SxCA7TmsqqU/DDiFbjMvgM0oR1c76x/ybE=
+|   256 87:b5:6f:f8:21:81:d3:3b:43:d0:40:81:c0:e3:69:89 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPBnU8ACiYepDY17N2VnU8gtjl8C3AXoZepGDLNnY012
+80/tcp open  http    syn-ack Apache httpd 2.4.29 ((Ubuntu))
+|_http-title: Assertion
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Jul 26 12:57:25 2023 -- 1 IP address (1 host up) scanned in 10.07 seconds
