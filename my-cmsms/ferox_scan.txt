@@ -1,0 +1,29 @@
+200      GET       13l       92w     6618c http://192.168.171.74/uploads/simplex/images/icons/cmsms-60x60.png
+200      GET        3l        6w     2634c http://192.168.171.74/uploads/simplex/images/icons/favicon_cms.ico
+200      GET        2l       32w      310c http://192.168.171.74/tmp/cache/stylesheet_combined_672b70bc724ec02c1cda21a77657ecfe.css
+200      GET       26l      374w    26556c http://192.168.171.74/uploads/simplex/js/jquery.sequence-min.js
+200      GET      127l     1182w    19502c http://192.168.171.74/index.php
+200      GET        6l     2820w    32902c http://192.168.171.74/tmp/cache/stylesheet_combined_8631931a3d4b395641dc0b675c4516e9.css
+200      GET      127l     1182w    19502c http://192.168.171.74/
+200      GET       78l      274w     4513c http://192.168.171.74/admin/login.php
+200      GET     2617l     6490w    54007c http://192.168.171.74/admin/loginstyle.php
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://192.168.171.74/assets/ (Apache)
+200      GET       22l      126w     2131c http://192.168.171.74/assets/
+200      GET        0l        0w        0c http://192.168.171.74/assets/configs/
+200      GET        0l        0w        0c http://192.168.171.74/assets/css/
+200      GET        0l        0w        0c http://192.168.171.74/assets/images/
+200      GET        0l        0w        0c http://192.168.171.74/assets/admin_custom/
+200      GET        0l        0w        0c http://192.168.171.74/assets/module_custom/
+200      GET        0l        0w        0c http://192.168.171.74/assets/plugins/
+200      GET        0l        0w        0c http://192.168.171.74/config.php
+200      GET        1l        5w       24c http://192.168.171.74/doc/
+200      GET       20l      115w      920c http://192.168.171.74/doc/README.txt
+200      GET        1l        5w       24c http://192.168.171.74/lib/
+200      GET        1l        5w       24c http://192.168.171.74/lib/smarty/
+200      GET        1l        5w       24c http://192.168.171.74/lib/tasks/
+200      GET        0l        0w        0c http://192.168.171.74/lib/version.php
+200      GET        0l        0w        0c http://192.168.171.74/lib/include.php
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://192.168.171.74/lib/assets/ (Apache)
+200      GET       17l       71w     1149c http://192.168.171.74/lib/assets/
+200      GET        1l        5w       24c http://192.168.171.74/lib/plugins/
+200      GET        1l        5w       24c http://192.168.171.74/lib/smarty/plugins/

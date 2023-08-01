@@ -1,0 +1,20 @@
+200      GET       40l       88w     1206c http://10.10.150.117/zYdHuAKjP/
+200      GET       57l      108w     1755c http://10.10.150.117/operatives.php
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://10.10.150.117/js/ (Apache)
+200      GET       28l       46w      495c http://10.10.150.117/css/main.css
+200      GET        7l      687w    60174c http://10.10.150.117/js/bootstrap.min.js
+200      GET       14l       48w     2945c http://10.10.150.117/favicon.png
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://10.10.150.117/css/ (Apache)
+200      GET        7l     2102w   160403c http://10.10.150.117/css/bootstrap.min.css
+200      GET      136l      344w    13691c http://10.10.150.117/
+200      GET       17l       68w     1142c http://10.10.150.117/css/
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://10.10.150.117/fonts/ (Apache)
+200      GET      140l      776w    68016c http://10.10.150.117/fonts/vt323-regular-webfont.woff
+200      GET     1063l     5031w   164067c http://10.10.150.117/fonts/VT323-Regular.ttf
+200      GET       17l       70w     1188c http://10.10.150.117/fonts/
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://10.10.150.117/images/ (Apache)
+200      GET       15l       49w      742c http://10.10.150.117/images/
+200      GET       40l       88w     1206c http://10.10.150.117/zYdHuAKjP/index.php
+200      GET      136l      344w    13691c http://10.10.150.117/index.php
+200      GET       16l       60w      947c http://10.10.150.117/js/
+200      GET        2l        4w       35c http://10.10.150.117/robots.txt

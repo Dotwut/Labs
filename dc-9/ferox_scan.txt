@@ -1,0 +1,12 @@
+200      GET       50l       88w     1091c http://192.168.243.209/search.php
+200      GET       42l      234w     2961c http://192.168.243.209/display.php
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://192.168.243.209/css/ (Apache)
+200      GET      110l      162w     1207c http://192.168.243.209/css/style.css
+200      GET       43l       79w      917c http://192.168.243.209/
+200      GET        0l        0w        0c http://192.168.243.209/config.php
+200      GET       16l       58w      934c http://192.168.243.209/css/
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://192.168.243.209/includes/ (Apache)
+200      GET       15l       49w      748c http://192.168.243.209/includes/
+200      GET       43l       79w      917c http://192.168.243.209/index.php
+200      GET       51l       87w     1210c http://192.168.243.209/manage.php
+200      GET       55l       86w     1056c http://192.168.243.209/results.php

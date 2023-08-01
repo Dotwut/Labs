@@ -1,0 +1,5 @@
+200      GET        5l       13w      111c http://10.10.6.17/
+200      GET      107l      249w     2154c http://10.10.6.17:8080/login
+403      GET        5l       27w      213c http://10.10.6.17:8080/application
+200      GET        1l        4w       20c http://10.10.6.17:8080/robots.txt
+403      GET        5l       27w      213c http://10.10.6.17:8080/temporary

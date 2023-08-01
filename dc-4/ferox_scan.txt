@@ -1,0 +1,10 @@
+200      GET       29l       46w      340c http://192.168.182.195/css/styles.css
+200      GET       23l       40w      506c http://192.168.182.195/index.php
+200      GET       23l       40w      506c http://192.168.182.195/
+403      GET        7l        9w      154c http://192.168.182.195/css/
+403      GET        7l        9w      154c http://192.168.182.195/images/
+200      GET       23l       40w      506c http://192.168.182.195/index.php
+403      GET        7l        9w      154c http://192.168.182.195/images/
+200      GET       29l       46w      340c http://192.168.182.195/css/styles.css
+200      GET       23l       40w      506c http://192.168.182.195/
+403      GET        7l        9w      154c http://192.168.182.195/css/
